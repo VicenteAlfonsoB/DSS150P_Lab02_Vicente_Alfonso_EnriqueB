@@ -1,18 +1,206 @@
+# Data contract - customers
+# DSS150P Laboratory Activity #2, 2.3
+
 dataset: customers
-owner: "TODO"
+description: >
+  Customer master data: one row per registered customer, carrying identity,
+  contact details, city of residence and a commercial segment label. Delivered
+  as a full CSV snapshot. Used downstream for customer analytics, segmentation
+  reporting, and as the join target for order and event data.
+
+owner: "PLACEHOLDER - Customer Records team, data steward <crm-data@example.invalid>"
+producer: "PLACEHOLDER - CRM extract job, Customer Records team"
+consumers:
+  - "DSS150P raw ingestion pipeline (this project)"
+  - "PLACEHOLDER - downstream analytics and segmentation reporting"
+
 source_type: csv
+source_location: data/customers.csv
 primary_key: customer_id
+
+key_notes: >
+  customer_id is the contracted primary key. The CSV format cannot enforce it and
+  the current delivery violates it: 247 distinct values across 250 rows. The key
+  is not being redefined to accommodate the defect. email is explicitly rejected
+  as an alternative key - it is missing on 3 rows and holds only 184 distinct
+  values across 247 non-missing ones.
+
 delivery:
-  cadence: "TODO"
+  cadence: "PLACEHOLDER - daily full snapshot, expected by 06:00 local time"
+  format: "UTF-8 encoded CSV, comma delimited, single header row"
+  availability_expectation: >
+    The file must be present and readable at the agreed location before the
+    ingestion window opens. A late or absent file is an incident, not a silent
+    no-op: the pipeline must fail loudly rather than ingest a stale snapshot.
+  volume_expectation: >
+    Approximately 250 rows at present. A change of more than 20 percent between
+    consecutive deliveries should be treated as suspicious and investigated
+    before the data is accepted.
+
 fields:
   - name: customer_id
     type: string
+    logical_type: string
     nullable: false
     unique: true
+    description: "Stable source-assigned customer identifier, observed format C####."
+
+  - name: first_name
+    type: string
+    logical_type: string
+    nullable: false
+    unique: false
+    description: "Given name as recorded at registration."
+
+  - name: last_name
+    type: string
+    logical_type: string
+    nullable: false
+    unique: false
+    description: "Family name as recorded at registration."
+
   - name: email
     type: string
+    logical_type: email_string
     nullable: true
+    unique: false
+    description: >
+      Contact email address. Nullable by agreement; currently absent on 3 of 250
+      rows. Not unique and must not be used as a key.
+
+  - name: city
+    type: string
+    logical_type: string
+    nullable: true
+    unique: false
+    description: >
+      City of residence. Nullable by agreement; currently absent on 2 of 250 rows.
+      Drawn from a closed set of 10 observed values.
+
+  - name: signup_date
+    type: string
+    logical_type: date
+    nullable: false
+    unique: false
+    description: >
+      Calendar date of registration. Transported as ISO text because CSV has no
+      date type; logically a date and must parse as one.
+
+  - name: customer_segment
+    type: string
+    logical_type: enum_string
+    nullable: false
+    unique: false
+    allowed_values: [Professional, Retail, SME, Student]
+    description: "Commercial classification assigned by the business."
+
 quality_rules:
-  - "TODO: define at least 5 rules"
+  - id: QR-01
+    rule: "customer_id must be present and non-empty on every row"
+    severity: reject
+    status: PASSING
+    evidence: "0 missing values across 250 rows"
+
+  - id: QR-02
+    rule: "customer_id must be unique across the delivered file"
+    severity: reject
+    status: FAILING
+    evidence: >
+      247 distinct values across 250 rows. C0036 and C0145 are exact duplicate
+      rows; C0090 carries two entirely different customers (Paolo Aquino,
+      Marikina, SME vs Hannah Reyes, Caloocan, Retail). The second case cannot be
+      resolved automatically and requires a decision from the producer.
+
+  - id: QR-03
+    rule: "No two rows may be identical across all columns"
+    severity: warn
+    status: FAILING
+    evidence: "2 exact duplicate rows detected (C0036, C0145)"
+
+  - id: QR-04
+    rule: "email must match a basic address pattern when present"
+    severity: warn
+    status: PASSING
+    evidence: "All 247 non-missing values contain a single @ and a dotted domain"
+
+  - id: QR-05
+    rule: "customer_segment must be one of the four agreed values"
+    severity: reject
+    status: PASSING
+    evidence: "Exactly 4 distinct values observed, all within the allowed set"
+
+  - id: QR-06
+    rule: "signup_date must parse as an ISO-8601 calendar date"
+    severity: reject
+    status: PASSING
+    evidence: "All 250 values parse; 189 distinct dates observed"
+
+  - id: QR-07
+    rule: "Missing values in email and city must each stay below 5 percent of rows"
+    severity: warn
+    status: PASSING
+    evidence: "email 1.2 percent (3 rows), city 0.8 percent (2 rows)"
+
+  - id: QR-08
+    rule: "The delivered column set must match this contract exactly"
+    severity: reject
+    status: PASSING
+    evidence: "7 columns present, names and order as specified"
+
 change_policy:
-  schema_change_notice: "TODO"
+  schema_change_notice: >
+    The producer must give at least 10 working days written notice before any
+    change to column names, column order, data types, or the allowed value set of
+    customer_segment. Notice goes to the consumer contacts listed below and must
+    state the change, the effective date, and whether it is backward compatible.
+  breaking_changes:
+    - "Removing or renaming any column"
+    - "Changing the logical type of any field"
+    - "Making a currently non-nullable field nullable"
+    - "Removing a value from customer_segment's allowed set"
+  non_breaking_changes:
+    - "Adding a new optional column at the end"
+    - "Adding a new value to customer_segment, provided notice is given"
+  unannounced_change_handling: >
+    An unannounced schema change causes the ingestion run to fail validation and
+    stop. The raw area is not written to and the run is logged as failed. Data is
+    never silently reshaped to fit.
+  new_enum_value_handling: >
+    A customer_segment value outside the allowed set does not halt ingestion of
+    the raw file - the raw area preserves source values exactly - but it raises a
+    warning in the run log and blocks downstream promotion until the contract is
+    updated.
+
+contact_and_escalation:
+  primary_contact: "PLACEHOLDER - Customer Records data steward <crm-data@example.invalid>"
+  escalation_path: >
+    1. Consumer raises a data quality ticket against the producing team.
+    2. Unacknowledged after 2 working days, escalate to the Customer Records team lead.
+    3. Unresolved after 5 working days, escalate to the data governance forum.
+  response_expectation: >
+    Rules with severity 'reject' must be acknowledged within 1 working day.
+    Rules with severity 'warn' must be acknowledged within 5 working days.
+  current_open_issues:
+    - "QR-02 - customer_id uniqueness violated, including one unresolvable identity collision on C0090"
+    - "QR-03 - 2 exact duplicate rows present"
+
+ingestion_approach:
+  mode: full_snapshot
+  justification: >
+    Incremental ingestion is impossible for this source. The file carries no
+    change marker of any kind - no updated_at, no version, no sequence number and
+    no delete indicator - so there is nothing to compare a watermark against.
+    signup_date records when a customer registered, not when their row last
+    changed, so a customer who moved city would keep their original signup_date
+    and be invisible to any watermark built on it. A full copy each run is
+    therefore the only correct option.
+  duplicate_prevention: >
+    Rerun safety comes from content hashing rather than from record keys. The
+    SHA-256 of the file is computed and compared against the manifest; if the
+    hash is already recorded, the copy is skipped and the run is logged as a
+    no-op. This makes repeated runs on unchanged input idempotent.
+  raw_area_policy: >
+    Source values are preserved byte for byte. Duplicates, missing emails and the
+    C0090 collision are all carried into the raw area untouched. Deduplication and
+    any business-rule cleaning belong to a later lifecycle stage, where the
+    decisions are visible and reversible.
