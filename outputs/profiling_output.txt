@@ -180,3 +180,66 @@ product_id        product_name category   brand  unit_price  stock_quantity  wei
      P0003   Aster Storage 003  Storage   Aster    34830.50              53      6.358
      P0004    Vertex Phone 004    Phone  Vertex    20008.31              27      6.199
      P0005   Orion Storage 005  Storage   Orion    76614.51             109      5.168
+
+==============================================================================
+API PROFILE: http://127.0.0.1:8000/api/events
+==============================================================================
+Envelope keys : ['page', 'per_page', 'total', 'has_more', 'next_page', 'items']
+  total       : 122
+  per_page    : 25
+
+Page walk
+------------------------------------------------------------------------------
+  page   1:  25 items   has_more=True   next_page=2
+  page   2:  25 items   has_more=True   next_page=3
+  page   3:  25 items   has_more=True   next_page=4
+  page   4:  25 items   has_more=True   next_page=5
+  page   5:  22 items   has_more=False   next_page=None
+
+Pages fetched        : 5
+Items fetched        : 122
+Server reported total: 122
+
+Flattened columns: ['event_id', 'customer_id', 'event_type', 'amount', 'updated_at', 'metadata.channel', 'metadata.campaign']
+
+Nulls per column
+event_id             0
+customer_id          0
+event_type           0
+amount               0
+updated_at           0
+metadata.channel     0
+metadata.campaign    0
+
+Distinct event_id : 120
+Repeated event_id : 2
+
+  E0020 appears 2 times:
+event_id customer_id event_type  amount          updated_at
+   E0020       C0073  page_view  651.71 2026-08-03T20:00:00
+   E0020       C0073  page_view  999.99 2026-08-21T09:00:00
+
+  E0055 appears 2 times:
+event_id customer_id  event_type  amount          updated_at
+   E0055       C0023 add_to_cart 1401.35 2026-08-08T05:00:00
+   E0055       C0023 add_to_cart  888.88 2026-08-21T10:00:00
+
+updated_at earliest : 2026-08-01 11:00:00
+updated_at latest   : 2026-08-21 10:00:00
+unparseable values  : 0
+timezone            : naive - no offset in the string
+records sharing the latest timestamp: 1
+
+Sample record
+------------------------------------------------------------------------------
+{
+  "event_id": "E0001",
+  "customer_id": "C0024",
+  "event_type": "page_view",
+  "amount": 4210.54,
+  "updated_at": "2026-08-01T11:00:00",
+  "metadata": {
+    "channel": "partner",
+    "campaign": "none"
+  }
+}

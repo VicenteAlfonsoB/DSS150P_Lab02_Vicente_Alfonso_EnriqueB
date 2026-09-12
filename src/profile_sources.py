@@ -244,7 +244,73 @@ def profile_parquet(path):
     print(df.head().to_string(index=False))
 
 
+def profile_api(base_url="http://127.0.0.1:8000/api/events", per_page=25):
+    # pagination fields, event structure, duplicate ids, updated_at behaviour
+    import requests
+    _header(f"API PROFILE: {base_url}")
+
+    page, pages_seen, all_items = 1, 0, []
+    while True:
+        resp = requests.get(base_url, params={"page": page, "per_page": per_page}, timeout=10)
+        resp.raise_for_status()
+        payload = resp.json()
+
+        if pages_seen == 0:
+            print(f"Envelope keys : {list(payload.keys())}")
+            print(f"  total       : {payload.get('total')}")
+            print(f"  per_page    : {payload.get('per_page')}")
+            print("\nPage walk")
+            print("-" * 78)
+
+        items = payload.get("items", [])
+        all_items.extend(items)
+        pages_seen += 1
+        print(f"  page {payload.get('page'):>3}: {len(items):>3} items   "
+              f"has_more={payload.get('has_more')}   next_page={payload.get('next_page')}")
+
+        if not payload.get("has_more"):
+            break
+        page = payload.get("next_page") or page + 1
+        if pages_seen > 200:
+            print("  safety stop - runaway pagination")
+            break
+
+    print(f"\nPages fetched        : {pages_seen}")
+    print(f"Items fetched        : {len(all_items)}")
+    print(f"Server reported total: {payload.get('total')}")
+
+    df = pd.json_normalize(all_items)
+    print(f"\nFlattened columns: {list(df.columns)}")
+    print("\nNulls per column")
+    print(df.isna().sum().to_string())
+
+    counts = df["event_id"].value_counts()
+    dupes = counts[counts > 1]
+    print(f"\nDistinct event_id : {df['event_id'].nunique()}")
+    print(f"Repeated event_id : {len(dupes)}")
+    for eid in dupes.index:
+        print(f"\n  {eid} appears {counts[eid]} times:")
+        print(df[df["event_id"] == eid][
+            ["event_id", "customer_id", "event_type", "amount", "updated_at"]
+        ].to_string(index=False))
+
+    ts = pd.to_datetime(df["updated_at"], errors="coerce", format="mixed")
+    print(f"\nupdated_at earliest : {ts.min()}")
+    print(f"updated_at latest   : {ts.max()}")
+    print(f"unparseable values  : {int(ts.isna().sum())}")
+    print(f"timezone            : {'naive - no offset in the string' if ts.dt.tz is None else ts.dt.tz}")
+    print(f"records sharing the latest timestamp: {int((ts == ts.max()).sum())}")
+
+    print("\nSample record")
+    print("-" * 78)
+    print(json.dumps(all_items[0], indent=2))
+
+
 if __name__=='__main__':
     profile_csv(DATA_DIR/'customers.csv')
     profile_json(DATA_DIR/'orders.json')
     profile_parquet(DATA_DIR/'products.parquet')
+    try:
+        profile_api()
+    except Exception as e:
+        print(f"\n(API profile skipped - is src/local_api_server.py running? {e})")
