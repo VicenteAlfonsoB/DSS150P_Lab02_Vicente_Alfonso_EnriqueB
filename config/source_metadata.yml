@@ -1,0 +1,194 @@
+
+sources:
+
+  - source_name: customers_csv
+    source_type: delimited_file_csv
+    location_or_endpoint: data/customers.csv
+    owner: "PLACEHOLDER - Customer Records team <crm-data@example.invalid>"
+    description: >
+      Customer master extract delivered as a flat CSV snapshot. One row per
+      customer registration, carrying identity, contact, location and a
+      commercial segment label.
+    record_count: 250
+    schema:
+      - {name: customer_id,      source_representation: text, logical_type: string, nullable: false, role: candidate_key}
+      - {name: first_name,       source_representation: text, logical_type: string, nullable: false, role: attribute}
+      - {name: last_name,        source_representation: text, logical_type: string, nullable: false, role: attribute}
+      - {name: email,            source_representation: text, logical_type: email_string, nullable: true, role: attribute}
+      - {name: city,             source_representation: text, logical_type: string, nullable: true, role: attribute}
+      - {name: signup_date,      source_representation: text, logical_type: date, nullable: false, role: attribute}
+      - {name: customer_segment, source_representation: text, logical_type: enum_string, nullable: false, role: attribute}
+    primary_or_candidate_key: "customer_id (candidate only - NOT unique in this snapshot)"
+    update_pattern: "Full snapshot file. No change-marker column, so incremental reading is impossible."
+    known_quality_issues:
+      - "customer_id is not unique: 247 distinct values across 250 rows"
+      - "2 exact duplicate rows (C0036 Kevin Fernandez, C0145 Julia Tan) - every field identical"
+      - "customer_id C0090 appears twice with entirely different attributes: two distinct people share one identifier"
+      - "email missing on 3 rows (1.2%); city missing on 2 rows (0.8%)"
+      - "email is not unique (184 distinct across 247 non-missing) so it cannot act as a surrogate key"
+      - "signup_date is delivered as text, not a typed date; the file format cannot enforce it"
+    acquisition_method: "Byte-for-byte file copy into raw/files/ with a SHA-256 manifest entry"
+    validation_checks:
+      - "row_count > 0"
+      - "column set matches the contract exactly"
+      - "customer_id present and non-empty on every row"
+      - "customer_id unique across the file (CURRENTLY FAILS: 3 repeated values)"
+      - "no exact duplicate rows (CURRENTLY FAILS: 2 found)"
+      - "email matches a basic address pattern when present"
+      - "customer_segment is one of [Professional, Retail, SME, Student]"
+      - "signup_date parses as an ISO-8601 calendar date"
+
+  - source_name: orders_json
+    source_type: json_file_array_of_objects
+    location_or_endpoint: data/orders.json
+    owner: "PLACEHOLDER - Order Management team <orders-eng@example.invalid>"
+    description: >
+      Order snapshot delivered as a JSON array. One object per order, with
+      monetary fields, an item count, a status label and a nested shipping
+      object describing region and method.
+    record_count: 250
+    schema:
+      - {name: order_id,         source_representation: json_string, logical_type: string, nullable: false, role: primary_key}
+      - {name: customer_id,      source_representation: json_string, logical_type: string, nullable: false, role: foreign_key}
+      - {name: order_timestamp,  source_representation: json_string, logical_type: timestamp_naive, nullable: false, role: event_time}
+      - {name: status,           source_representation: json_string, logical_type: enum_string, nullable: false, role: attribute}
+      - {name: item_count,       source_representation: json_number, logical_type: integer, nullable: false, role: measure}
+      - {name: subtotal,         source_representation: json_number, logical_type: decimal, nullable: false, role: measure}
+      - {name: shipping_fee,     source_representation: json_number, logical_type: decimal, nullable: false, role: measure}
+      - {name: total_amount,     source_representation: json_number, logical_type: decimal, nullable: false, role: derived_measure}
+      - {name: shipping,         source_representation: json_object, logical_type: struct, nullable: false, role: nested_attribute}
+      - {name: shipping.region,  source_representation: json_string, logical_type: string, nullable: false, role: nested_attribute}
+      - {name: shipping.method,  source_representation: json_string, logical_type: enum_string, nullable: false, role: nested_attribute}
+    primary_or_candidate_key: "order_id (verified unique: 250 of 250)"
+    update_pattern: "Full snapshot file. order_timestamp is event time, not a modification marker."
+    known_quality_issues:
+      - "order_timestamp is timezone-naive (2026-06-27T03:27:00); the originating clock is undeclared"
+      - "shipping is a nested object and must be flattened, kept as a struct, or split into a child table"
+      - "total_amount is derived from subtotal + shipping_fee and is therefore not an independent fact"
+      - "JSON imposes no schema: key presence and types are consistent in this snapshot but not guaranteed"
+    acquisition_method: "Byte-for-byte file copy into raw/files/ with a SHA-256 manifest entry"
+    validation_checks:
+      - "root element is a JSON array"
+      - "order_id present, non-empty and unique"
+      - "every record carries all 9 top-level keys"
+      - "total_amount equals subtotal + shipping_fee within 0.005 (VERIFIED: 0 mismatches)"
+      - "status is one of [Cancelled, Delivered, Packed, Paid, Pending, Shipped]"
+      - "item_count >= 1 and subtotal >= 0"
+      - "shipping contains both region and method"
+      - "order_timestamp parses as ISO-8601"
+
+  - source_name: products_parquet
+    source_type: parquet_file
+    location_or_endpoint: data/products.parquet
+    owner: "PLACEHOLDER - Product Catalogue team <catalog@example.invalid>"
+    description: >
+      Product catalogue snapshot in Apache Parquet. One row per product with
+      category and brand labels, price, stock level and shipping weight.
+      Written uncompressed in a single row group.
+    record_count: 200
+    schema:
+      - {name: product_id,     source_representation: parquet_string, logical_type: string, nullable: false, role: primary_key}
+      - {name: product_name,   source_representation: parquet_string, logical_type: string, nullable: false, role: attribute}
+      - {name: category,       source_representation: parquet_string, logical_type: enum_string, nullable: false, role: attribute}
+      - {name: brand,          source_representation: parquet_string, logical_type: enum_string, nullable: false, role: attribute}
+      - {name: unit_price,     source_representation: parquet_double, logical_type: decimal, nullable: false, role: measure}
+      - {name: stock_quantity, source_representation: parquet_int32,  logical_type: integer, nullable: false, role: measure}
+      - {name: weight_kg,      source_representation: parquet_double, logical_type: decimal, nullable: false, role: measure}
+    primary_or_candidate_key: "product_id (verified unique: 200 of 200)"
+    update_pattern: "Full snapshot file. No timestamp of any kind, so change detection is impossible from content alone."
+    known_quality_issues:
+      - "No nulls and no structural defects - this is the cleanest of the five sources"
+      - "Written UNCOMPRESSED in 1 row group, so at 200 rows the file (14.3 KB) is larger than the same data as CSV (11.3 KB)"
+      - "No timestamp column at all; incremental acquisition would require an external signal such as file mtime"
+      - "Carries no record of when the snapshot was taken"
+    acquisition_method: "Byte-for-byte file copy into raw/files/ with a SHA-256 manifest entry"
+    validation_checks:
+      - "file is readable by pyarrow and the embedded schema matches the contract"
+      - "product_id present and unique"
+      - "unit_price > 0"
+      - "stock_quantity >= 0"
+      - "weight_kg > 0"
+      - "category and brand fall within the agreed value sets"
+
+  - source_name: events_api
+    source_type: rest_api_paginated_json
+    location_or_endpoint: "http://127.0.0.1:8000/api/events"
+    owner: "PLACEHOLDER - Platform Events team <events-api@example.invalid>"
+    description: >
+      Paginated REST endpoint exposing customer interaction events. Each item
+      carries an event type, a monetary amount, a last-modified timestamp and a
+      nested metadata object. Supports incremental retrieval via updated_after.
+    record_count: "122 at time of profiling (full feed, no updated_after filter)"
+    schema:
+      - {name: event_id,           source_representation: json_string, logical_type: string, nullable: false, role: business_key}
+      - {name: customer_id,        source_representation: json_string, logical_type: string, nullable: false, role: foreign_key}
+      - {name: event_type,         source_representation: json_string, logical_type: enum_string, nullable: false, role: attribute}
+      - {name: amount,             source_representation: json_number, logical_type: decimal, nullable: false, role: measure}
+      - {name: updated_at,         source_representation: json_string, logical_type: timestamp_naive, nullable: false, role: change_marker}
+      - {name: metadata,           source_representation: json_object, logical_type: struct, nullable: false, role: nested_attribute}
+      - {name: metadata.channel,   source_representation: json_string, logical_type: enum_string, nullable: false, role: nested_attribute}
+      - {name: metadata.campaign,  source_representation: json_string, logical_type: enum_string, nullable: false, role: nested_attribute}
+    pagination_envelope:
+      fields: [page, per_page, total, has_more, next_page, items]
+      behaviour: "5 pages at per_page=25; final page returns 22 items with has_more=false and next_page=null"
+    primary_or_candidate_key: "event_id (NOT unique as delivered: 120 distinct across 122 items)"
+    update_pattern: "Incremental. Per-record updated_at, and the endpoint accepts an updated_after query parameter."
+    known_quality_issues:
+      - "event_id E0020 delivered twice: amount 651.71 at 2026-08-03T20:00:00 and 999.99 at 2026-08-21T09:00:00"
+      - "event_id E0055 delivered twice: amount 1401.35 at 2026-08-08T05:00:00 and 888.88 at 2026-08-21T10:00:00"
+      - "Duplicates are restatements with changed values, not transmission copies; a keep-newest rule is mandatory"
+      - "The maximum updated_at (2026-08-21T10:00:00) belongs to a restated record, so deduplication and watermarking are coupled"
+      - "updated_at is timezone-naive; the originating clock is undeclared"
+      - "Page 1 alone returns 25 of 122 items; ignoring has_more silently discards 80 percent of the feed"
+    acquisition_method: >
+      Paginated GET looping while has_more is true, deduplicated on event_id keeping the
+      greatest updated_at, appended to raw/api/events.jsonl with _ingested_at and _source
+      attached to every record.
+    validation_checks:
+      - "every page is requested until has_more is false"
+      - "count of items fetched equals the envelope total"
+      - "event_id is unique after deduplication"
+      - "updated_at parses as ISO-8601 on every record"
+      - "the persisted watermark is greater than or equal to the previous watermark, never lower"
+      - "the watermark is written only after the raw file write has succeeded"
+
+  - source_name: support_tickets_postgres
+    source_type: postgresql_table
+    location_or_endpoint: "postgresql://<host>:5432/dss150p -> public.support_tickets (credentials from environment, never committed)"
+    owner: "PLACEHOLDER - Customer Support Systems team <support-db@example.invalid>"
+    description: >
+      Operational support ticket table in PostgreSQL 16. One row per ticket with
+      category, priority, assigned agent, lifecycle timestamps and status.
+      Inspected only in this laboratory; not ingested.
+    record_count: 250
+    schema:
+      - {name: ticket_id,      source_representation: integer,                     logical_type: integer, nullable: false, role: primary_key}
+      - {name: customer_id,    source_representation: "character varying(10)",     logical_type: string, nullable: false, role: foreign_key}
+      - {name: category,       source_representation: "character varying(40)",     logical_type: enum_string, nullable: false, role: attribute}
+      - {name: priority,       source_representation: "character varying(10)",     logical_type: enum_string, nullable: false, role: attribute}
+      - {name: assigned_agent, source_representation: "character varying(80)",     logical_type: string, nullable: true, role: attribute}
+      - {name: opened_at,      source_representation: "timestamp without time zone", logical_type: timestamp_naive, nullable: false, role: event_time}
+      - {name: resolved_at,    source_representation: "timestamp without time zone", logical_type: timestamp_naive, nullable: true, role: event_time}
+      - {name: status,         source_representation: "character varying(20)",     logical_type: enum_string, nullable: false, role: attribute}
+    primary_or_candidate_key: "ticket_id (enforced PRIMARY KEY, btree index support_tickets_pkey)"
+    update_pattern: >
+      Mutable operational table. status, assigned_agent and resolved_at change after
+      insert, but there is no updated_at column, so no safe timestamp-based change
+      marker exists.
+    known_quality_issues:
+      - "assigned_agent is NULL on 4 rows - a genuine ownership gap"
+      - "resolved_at is NULL on 125 rows, which is not-applicable rather than missing: it maps exactly onto status (Open 56 + In Progress 69 = 125)"
+      - "Both timestamp columns are 'without time zone'"
+      - "No updated_at column, so a watermark over opened_at would capture new tickets but permanently miss every update to existing ones"
+      - "0 rows have resolved_at earlier than opened_at - this check passed"
+    acquisition_method: >
+      Inspection only in this laboratory, using bounded queries. Production ingestion
+      would require either a maintained updated_at column with a trigger, or log-based
+      change data capture.
+    validation_checks:
+      - "row count > 0"
+      - "ticket_id unique (enforced by the database)"
+      - "resolved_at IS NOT NULL if and only if status is in [Closed, Resolved]"
+      - "resolved_at >= opened_at where both are present"
+      - "status is one of [Closed, In Progress, Open, Resolved]"
+      - "all inspection queries are bounded; no cross joins or unbounded full-table scans against the operational source"
