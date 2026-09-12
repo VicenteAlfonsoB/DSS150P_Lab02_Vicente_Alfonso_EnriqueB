@@ -1,0 +1,18 @@
+dataset: customers
+owner: "TODO"
+source_type: csv
+primary_key: customer_id
+delivery:
+  cadence: "TODO"
+fields:
+  - name: customer_id
+    type: string
+    nullable: false
+    unique: true
+  - name: email
+    type: string
+    nullable: true
+quality_rules:
+  - "TODO: define at least 5 rules"
+change_policy:
+  schema_change_notice: "TODO"

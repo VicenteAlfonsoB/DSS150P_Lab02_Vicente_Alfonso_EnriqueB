@@ -1,0 +1,5 @@
+pandas>=2.2
+pyarrow>=17
+requests>=2.32
+psycopg[binary]>=3.2
+PyYAML>=6.0

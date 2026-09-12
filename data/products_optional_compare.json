@@ -1,0 +1,1802 @@
+[
+  {
+    "product_id": "P0001",
+    "product_name": "Pioneer Storage 001",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 60431.61,
+    "stock_quantity": 61,
+    "weight_kg": 0.215
+  },
+  {
+    "product_id": "P0002",
+    "product_name": "Nimbus Monitor 002",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 74094.63,
+    "stock_quantity": 239,
+    "weight_kg": 4.407
+  },
+  {
+    "product_id": "P0003",
+    "product_name": "Aster Storage 003",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 34830.5,
+    "stock_quantity": 53,
+    "weight_kg": 6.358
+  },
+  {
+    "product_id": "P0004",
+    "product_name": "Vertex Phone 004",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 20008.31,
+    "stock_quantity": 27,
+    "weight_kg": 6.199
+  },
+  {
+    "product_id": "P0005",
+    "product_name": "Orion Storage 005",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 76614.51,
+    "stock_quantity": 109,
+    "weight_kg": 5.168
+  },
+  {
+    "product_id": "P0006",
+    "product_name": "Nimbus Phone 006",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 43745.46,
+    "stock_quantity": 108,
+    "weight_kg": 2.033
+  },
+  {
+    "product_id": "P0007",
+    "product_name": "Nova Phone 007",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 84796.84,
+    "stock_quantity": 147,
+    "weight_kg": 5.45
+  },
+  {
+    "product_id": "P0008",
+    "product_name": "Orion Storage 008",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 74094.55,
+    "stock_quantity": 151,
+    "weight_kg": 1.54
+  },
+  {
+    "product_id": "P0009",
+    "product_name": "Vertex Accessory 009",
+    "category": "Accessory",
+    "brand": "Vertex",
+    "unit_price": 3469.37,
+    "stock_quantity": 151,
+    "weight_kg": 3.732
+  },
+  {
+    "product_id": "P0010",
+    "product_name": "Nova Monitor 010",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 3587.84,
+    "stock_quantity": 81,
+    "weight_kg": 6.675
+  },
+  {
+    "product_id": "P0011",
+    "product_name": "Pioneer Accessory 011",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 54100.39,
+    "stock_quantity": 206,
+    "weight_kg": 5.775
+  },
+  {
+    "product_id": "P0012",
+    "product_name": "Nimbus Phone 012",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 30254.28,
+    "stock_quantity": 220,
+    "weight_kg": 4.431
+  },
+  {
+    "product_id": "P0013",
+    "product_name": "Aster Storage 013",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 52132.62,
+    "stock_quantity": 30,
+    "weight_kg": 6.345
+  },
+  {
+    "product_id": "P0014",
+    "product_name": "Nimbus Accessory 014",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 45468.73,
+    "stock_quantity": 24,
+    "weight_kg": 1.461
+  },
+  {
+    "product_id": "P0015",
+    "product_name": "Nimbus Laptop 015",
+    "category": "Laptop",
+    "brand": "Nimbus",
+    "unit_price": 61885.55,
+    "stock_quantity": 10,
+    "weight_kg": 7.318
+  },
+  {
+    "product_id": "P0016",
+    "product_name": "Pioneer Phone 016",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 47575.27,
+    "stock_quantity": 111,
+    "weight_kg": 7.363
+  },
+  {
+    "product_id": "P0017",
+    "product_name": "Pioneer Accessory 017",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 54718.64,
+    "stock_quantity": 189,
+    "weight_kg": 5.526
+  },
+  {
+    "product_id": "P0018",
+    "product_name": "Nimbus Accessory 018",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 7911.54,
+    "stock_quantity": 159,
+    "weight_kg": 0.459
+  },
+  {
+    "product_id": "P0019",
+    "product_name": "Nimbus Phone 019",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 40915.86,
+    "stock_quantity": 175,
+    "weight_kg": 4.574
+  },
+  {
+    "product_id": "P0020",
+    "product_name": "Pioneer Accessory 020",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 67536.45,
+    "stock_quantity": 243,
+    "weight_kg": 0.114
+  },
+  {
+    "product_id": "P0021",
+    "product_name": "Orion Tablet 021",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 42820.18,
+    "stock_quantity": 133,
+    "weight_kg": 5.446
+  },
+  {
+    "product_id": "P0022",
+    "product_name": "Orion Storage 022",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 74399.95,
+    "stock_quantity": 169,
+    "weight_kg": 1.488
+  },
+  {
+    "product_id": "P0023",
+    "product_name": "Pioneer Storage 023",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 34595.64,
+    "stock_quantity": 117,
+    "weight_kg": 1.132
+  },
+  {
+    "product_id": "P0024",
+    "product_name": "Vertex Phone 024",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 68971.99,
+    "stock_quantity": 155,
+    "weight_kg": 2.825
+  },
+  {
+    "product_id": "P0025",
+    "product_name": "Nova Tablet 025",
+    "category": "Tablet",
+    "brand": "Nova",
+    "unit_price": 32069.56,
+    "stock_quantity": 44,
+    "weight_kg": 0.13
+  },
+  {
+    "product_id": "P0026",
+    "product_name": "Nimbus Laptop 026",
+    "category": "Laptop",
+    "brand": "Nimbus",
+    "unit_price": 37721.39,
+    "stock_quantity": 158,
+    "weight_kg": 2.221
+  },
+  {
+    "product_id": "P0027",
+    "product_name": "Aster Storage 027",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 79362.5,
+    "stock_quantity": 164,
+    "weight_kg": 7.729
+  },
+  {
+    "product_id": "P0028",
+    "product_name": "Pioneer Phone 028",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 15759.73,
+    "stock_quantity": 190,
+    "weight_kg": 7.669
+  },
+  {
+    "product_id": "P0029",
+    "product_name": "Nova Storage 029",
+    "category": "Storage",
+    "brand": "Nova",
+    "unit_price": 10269.2,
+    "stock_quantity": 205,
+    "weight_kg": 5.328
+  },
+  {
+    "product_id": "P0030",
+    "product_name": "Orion Tablet 030",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 79001.63,
+    "stock_quantity": 169,
+    "weight_kg": 7.828
+  },
+  {
+    "product_id": "P0031",
+    "product_name": "Nova Phone 031",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 14750.09,
+    "stock_quantity": 73,
+    "weight_kg": 2.787
+  },
+  {
+    "product_id": "P0032",
+    "product_name": "Nova Accessory 032",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 22697.1,
+    "stock_quantity": 19,
+    "weight_kg": 1.118
+  },
+  {
+    "product_id": "P0033",
+    "product_name": "Aster Storage 033",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 82373.12,
+    "stock_quantity": 236,
+    "weight_kg": 1.883
+  },
+  {
+    "product_id": "P0034",
+    "product_name": "Pioneer Phone 034",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 32747.07,
+    "stock_quantity": 133,
+    "weight_kg": 1.802
+  },
+  {
+    "product_id": "P0035",
+    "product_name": "Orion Storage 035",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 31057.54,
+    "stock_quantity": 48,
+    "weight_kg": 6.893
+  },
+  {
+    "product_id": "P0036",
+    "product_name": "Aster Storage 036",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 43539.79,
+    "stock_quantity": 187,
+    "weight_kg": 2.416
+  },
+  {
+    "product_id": "P0037",
+    "product_name": "Aster Monitor 037",
+    "category": "Monitor",
+    "brand": "Aster",
+    "unit_price": 9506.82,
+    "stock_quantity": 35,
+    "weight_kg": 0.844
+  },
+  {
+    "product_id": "P0038",
+    "product_name": "Aster Phone 038",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 28028.54,
+    "stock_quantity": 236,
+    "weight_kg": 0.586
+  },
+  {
+    "product_id": "P0039",
+    "product_name": "Nova Accessory 039",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 32610.27,
+    "stock_quantity": 166,
+    "weight_kg": 7.784
+  },
+  {
+    "product_id": "P0040",
+    "product_name": "Aster Phone 040",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 1350.65,
+    "stock_quantity": 141,
+    "weight_kg": 7.712
+  },
+  {
+    "product_id": "P0041",
+    "product_name": "Aster Phone 041",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 48669.4,
+    "stock_quantity": 239,
+    "weight_kg": 1.984
+  },
+  {
+    "product_id": "P0042",
+    "product_name": "Aster Phone 042",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 61339.92,
+    "stock_quantity": 197,
+    "weight_kg": 0.131
+  },
+  {
+    "product_id": "P0043",
+    "product_name": "Aster Phone 043",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 51922.36,
+    "stock_quantity": 89,
+    "weight_kg": 4.118
+  },
+  {
+    "product_id": "P0044",
+    "product_name": "Aster Tablet 044",
+    "category": "Tablet",
+    "brand": "Aster",
+    "unit_price": 75213.3,
+    "stock_quantity": 143,
+    "weight_kg": 0.596
+  },
+  {
+    "product_id": "P0045",
+    "product_name": "Pioneer Laptop 045",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 57757.59,
+    "stock_quantity": 50,
+    "weight_kg": 0.666
+  },
+  {
+    "product_id": "P0046",
+    "product_name": "Vertex Storage 046",
+    "category": "Storage",
+    "brand": "Vertex",
+    "unit_price": 80266.5,
+    "stock_quantity": 61,
+    "weight_kg": 4.716
+  },
+  {
+    "product_id": "P0047",
+    "product_name": "Nimbus Monitor 047",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 12798.4,
+    "stock_quantity": 199,
+    "weight_kg": 6.86
+  },
+  {
+    "product_id": "P0048",
+    "product_name": "Pioneer Laptop 048",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 55953.92,
+    "stock_quantity": 38,
+    "weight_kg": 7.726
+  },
+  {
+    "product_id": "P0049",
+    "product_name": "Aster Monitor 049",
+    "category": "Monitor",
+    "brand": "Aster",
+    "unit_price": 10012.63,
+    "stock_quantity": 175,
+    "weight_kg": 7.501
+  },
+  {
+    "product_id": "P0050",
+    "product_name": "Orion Tablet 050",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 39855.49,
+    "stock_quantity": 53,
+    "weight_kg": 2.104
+  },
+  {
+    "product_id": "P0051",
+    "product_name": "Nova Laptop 051",
+    "category": "Laptop",
+    "brand": "Nova",
+    "unit_price": 29803.2,
+    "stock_quantity": 74,
+    "weight_kg": 5.099
+  },
+  {
+    "product_id": "P0052",
+    "product_name": "Nimbus Tablet 052",
+    "category": "Tablet",
+    "brand": "Nimbus",
+    "unit_price": 41730.71,
+    "stock_quantity": 88,
+    "weight_kg": 7.449
+  },
+  {
+    "product_id": "P0053",
+    "product_name": "Aster Phone 053",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 31926.04,
+    "stock_quantity": 73,
+    "weight_kg": 0.856
+  },
+  {
+    "product_id": "P0054",
+    "product_name": "Orion Tablet 054",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 48468.47,
+    "stock_quantity": 13,
+    "weight_kg": 2.69
+  },
+  {
+    "product_id": "P0055",
+    "product_name": "Pioneer Laptop 055",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 54817.27,
+    "stock_quantity": 192,
+    "weight_kg": 7.75
+  },
+  {
+    "product_id": "P0056",
+    "product_name": "Aster Monitor 056",
+    "category": "Monitor",
+    "brand": "Aster",
+    "unit_price": 81145.92,
+    "stock_quantity": 105,
+    "weight_kg": 6.479
+  },
+  {
+    "product_id": "P0057",
+    "product_name": "Orion Accessory 057",
+    "category": "Accessory",
+    "brand": "Orion",
+    "unit_price": 80374.68,
+    "stock_quantity": 237,
+    "weight_kg": 0.452
+  },
+  {
+    "product_id": "P0058",
+    "product_name": "Orion Tablet 058",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 27976.29,
+    "stock_quantity": 72,
+    "weight_kg": 4.421
+  },
+  {
+    "product_id": "P0059",
+    "product_name": "Pioneer Laptop 059",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 81232.4,
+    "stock_quantity": 202,
+    "weight_kg": 6.616
+  },
+  {
+    "product_id": "P0060",
+    "product_name": "Vertex Laptop 060",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 12267.22,
+    "stock_quantity": 126,
+    "weight_kg": 6.309
+  },
+  {
+    "product_id": "P0061",
+    "product_name": "Nimbus Laptop 061",
+    "category": "Laptop",
+    "brand": "Nimbus",
+    "unit_price": 43631.08,
+    "stock_quantity": 35,
+    "weight_kg": 7.684
+  },
+  {
+    "product_id": "P0062",
+    "product_name": "Orion Storage 062",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 28314.1,
+    "stock_quantity": 173,
+    "weight_kg": 2.285
+  },
+  {
+    "product_id": "P0063",
+    "product_name": "Aster Phone 063",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 4698.85,
+    "stock_quantity": 214,
+    "weight_kg": 0.189
+  },
+  {
+    "product_id": "P0064",
+    "product_name": "Nimbus Storage 064",
+    "category": "Storage",
+    "brand": "Nimbus",
+    "unit_price": 59520.28,
+    "stock_quantity": 105,
+    "weight_kg": 0.446
+  },
+  {
+    "product_id": "P0065",
+    "product_name": "Nimbus Monitor 065",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 55791.66,
+    "stock_quantity": 46,
+    "weight_kg": 6.96
+  },
+  {
+    "product_id": "P0066",
+    "product_name": "Pioneer Laptop 066",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 16637.38,
+    "stock_quantity": 217,
+    "weight_kg": 7.802
+  },
+  {
+    "product_id": "P0067",
+    "product_name": "Aster Tablet 067",
+    "category": "Tablet",
+    "brand": "Aster",
+    "unit_price": 46530.19,
+    "stock_quantity": 38,
+    "weight_kg": 2.706
+  },
+  {
+    "product_id": "P0068",
+    "product_name": "Vertex Phone 068",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 5643.2,
+    "stock_quantity": 236,
+    "weight_kg": 7.963
+  },
+  {
+    "product_id": "P0069",
+    "product_name": "Pioneer Laptop 069",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 80954.68,
+    "stock_quantity": 157,
+    "weight_kg": 7.888
+  },
+  {
+    "product_id": "P0070",
+    "product_name": "Nimbus Monitor 070",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 18085.01,
+    "stock_quantity": 27,
+    "weight_kg": 2.296
+  },
+  {
+    "product_id": "P0071",
+    "product_name": "Nimbus Storage 071",
+    "category": "Storage",
+    "brand": "Nimbus",
+    "unit_price": 42263.25,
+    "stock_quantity": 127,
+    "weight_kg": 0.622
+  },
+  {
+    "product_id": "P0072",
+    "product_name": "Nimbus Tablet 072",
+    "category": "Tablet",
+    "brand": "Nimbus",
+    "unit_price": 21672.46,
+    "stock_quantity": 209,
+    "weight_kg": 0.218
+  },
+  {
+    "product_id": "P0073",
+    "product_name": "Nova Monitor 073",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 57985.36,
+    "stock_quantity": 65,
+    "weight_kg": 7.908
+  },
+  {
+    "product_id": "P0074",
+    "product_name": "Orion Laptop 074",
+    "category": "Laptop",
+    "brand": "Orion",
+    "unit_price": 5046.61,
+    "stock_quantity": 153,
+    "weight_kg": 6.193
+  },
+  {
+    "product_id": "P0075",
+    "product_name": "Vertex Laptop 075",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 11176.0,
+    "stock_quantity": 199,
+    "weight_kg": 2.993
+  },
+  {
+    "product_id": "P0076",
+    "product_name": "Pioneer Tablet 076",
+    "category": "Tablet",
+    "brand": "Pioneer",
+    "unit_price": 78235.73,
+    "stock_quantity": 140,
+    "weight_kg": 4.393
+  },
+  {
+    "product_id": "P0077",
+    "product_name": "Vertex Accessory 077",
+    "category": "Accessory",
+    "brand": "Vertex",
+    "unit_price": 84096.63,
+    "stock_quantity": 89,
+    "weight_kg": 7.579
+  },
+  {
+    "product_id": "P0078",
+    "product_name": "Vertex Accessory 078",
+    "category": "Accessory",
+    "brand": "Vertex",
+    "unit_price": 12978.63,
+    "stock_quantity": 100,
+    "weight_kg": 1.354
+  },
+  {
+    "product_id": "P0079",
+    "product_name": "Orion Storage 079",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 68057.04,
+    "stock_quantity": 234,
+    "weight_kg": 0.975
+  },
+  {
+    "product_id": "P0080",
+    "product_name": "Vertex Tablet 080",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 62014.03,
+    "stock_quantity": 0,
+    "weight_kg": 5.884
+  },
+  {
+    "product_id": "P0081",
+    "product_name": "Vertex Laptop 081",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 28150.98,
+    "stock_quantity": 112,
+    "weight_kg": 4.236
+  },
+  {
+    "product_id": "P0082",
+    "product_name": "Orion Phone 082",
+    "category": "Phone",
+    "brand": "Orion",
+    "unit_price": 717.27,
+    "stock_quantity": 181,
+    "weight_kg": 2.04
+  },
+  {
+    "product_id": "P0083",
+    "product_name": "Nova Monitor 083",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 33538.2,
+    "stock_quantity": 61,
+    "weight_kg": 7.898
+  },
+  {
+    "product_id": "P0084",
+    "product_name": "Nimbus Tablet 084",
+    "category": "Tablet",
+    "brand": "Nimbus",
+    "unit_price": 14161.59,
+    "stock_quantity": 200,
+    "weight_kg": 7.695
+  },
+  {
+    "product_id": "P0085",
+    "product_name": "Nova Phone 085",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 77918.62,
+    "stock_quantity": 10,
+    "weight_kg": 4.418
+  },
+  {
+    "product_id": "P0086",
+    "product_name": "Vertex Storage 086",
+    "category": "Storage",
+    "brand": "Vertex",
+    "unit_price": 11002.36,
+    "stock_quantity": 239,
+    "weight_kg": 7.065
+  },
+  {
+    "product_id": "P0087",
+    "product_name": "Vertex Laptop 087",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 49611.19,
+    "stock_quantity": 166,
+    "weight_kg": 7.382
+  },
+  {
+    "product_id": "P0088",
+    "product_name": "Vertex Tablet 088",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 65912.66,
+    "stock_quantity": 37,
+    "weight_kg": 2.42
+  },
+  {
+    "product_id": "P0089",
+    "product_name": "Nova Monitor 089",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 62682.87,
+    "stock_quantity": 216,
+    "weight_kg": 3.019
+  },
+  {
+    "product_id": "P0090",
+    "product_name": "Orion Tablet 090",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 14211.94,
+    "stock_quantity": 190,
+    "weight_kg": 1.585
+  },
+  {
+    "product_id": "P0091",
+    "product_name": "Nimbus Accessory 091",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 392.85,
+    "stock_quantity": 183,
+    "weight_kg": 1.221
+  },
+  {
+    "product_id": "P0092",
+    "product_name": "Orion Monitor 092",
+    "category": "Monitor",
+    "brand": "Orion",
+    "unit_price": 45775.07,
+    "stock_quantity": 134,
+    "weight_kg": 0.243
+  },
+  {
+    "product_id": "P0093",
+    "product_name": "Nova Monitor 093",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 21425.37,
+    "stock_quantity": 216,
+    "weight_kg": 1.043
+  },
+  {
+    "product_id": "P0094",
+    "product_name": "Nova Phone 094",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 74369.33,
+    "stock_quantity": 250,
+    "weight_kg": 1.73
+  },
+  {
+    "product_id": "P0095",
+    "product_name": "Pioneer Laptop 095",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 12677.0,
+    "stock_quantity": 129,
+    "weight_kg": 0.532
+  },
+  {
+    "product_id": "P0096",
+    "product_name": "Aster Accessory 096",
+    "category": "Accessory",
+    "brand": "Aster",
+    "unit_price": 37700.19,
+    "stock_quantity": 244,
+    "weight_kg": 1.983
+  },
+  {
+    "product_id": "P0097",
+    "product_name": "Aster Phone 097",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 33767.45,
+    "stock_quantity": 19,
+    "weight_kg": 4.982
+  },
+  {
+    "product_id": "P0098",
+    "product_name": "Nimbus Laptop 098",
+    "category": "Laptop",
+    "brand": "Nimbus",
+    "unit_price": 58856.55,
+    "stock_quantity": 161,
+    "weight_kg": 1.568
+  },
+  {
+    "product_id": "P0099",
+    "product_name": "Vertex Storage 099",
+    "category": "Storage",
+    "brand": "Vertex",
+    "unit_price": 3549.65,
+    "stock_quantity": 43,
+    "weight_kg": 7.614
+  },
+  {
+    "product_id": "P0100",
+    "product_name": "Vertex Phone 100",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 71361.78,
+    "stock_quantity": 32,
+    "weight_kg": 3.801
+  },
+  {
+    "product_id": "P0101",
+    "product_name": "Aster Storage 101",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 21103.37,
+    "stock_quantity": 184,
+    "weight_kg": 1.799
+  },
+  {
+    "product_id": "P0102",
+    "product_name": "Orion Monitor 102",
+    "category": "Monitor",
+    "brand": "Orion",
+    "unit_price": 62844.3,
+    "stock_quantity": 94,
+    "weight_kg": 4.522
+  },
+  {
+    "product_id": "P0103",
+    "product_name": "Aster Laptop 103",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 12794.33,
+    "stock_quantity": 21,
+    "weight_kg": 0.488
+  },
+  {
+    "product_id": "P0104",
+    "product_name": "Pioneer Storage 104",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 10292.72,
+    "stock_quantity": 31,
+    "weight_kg": 2.167
+  },
+  {
+    "product_id": "P0105",
+    "product_name": "Pioneer Accessory 105",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 74126.65,
+    "stock_quantity": 96,
+    "weight_kg": 4.083
+  },
+  {
+    "product_id": "P0106",
+    "product_name": "Pioneer Tablet 106",
+    "category": "Tablet",
+    "brand": "Pioneer",
+    "unit_price": 13739.83,
+    "stock_quantity": 185,
+    "weight_kg": 1.055
+  },
+  {
+    "product_id": "P0107",
+    "product_name": "Nova Laptop 107",
+    "category": "Laptop",
+    "brand": "Nova",
+    "unit_price": 24666.73,
+    "stock_quantity": 59,
+    "weight_kg": 6.395
+  },
+  {
+    "product_id": "P0108",
+    "product_name": "Pioneer Storage 108",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 69744.57,
+    "stock_quantity": 237,
+    "weight_kg": 6.671
+  },
+  {
+    "product_id": "P0109",
+    "product_name": "Nova Phone 109",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 53069.14,
+    "stock_quantity": 183,
+    "weight_kg": 1.713
+  },
+  {
+    "product_id": "P0110",
+    "product_name": "Aster Phone 110",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 66692.8,
+    "stock_quantity": 135,
+    "weight_kg": 1.396
+  },
+  {
+    "product_id": "P0111",
+    "product_name": "Vertex Accessory 111",
+    "category": "Accessory",
+    "brand": "Vertex",
+    "unit_price": 63732.22,
+    "stock_quantity": 31,
+    "weight_kg": 7.485
+  },
+  {
+    "product_id": "P0112",
+    "product_name": "Pioneer Tablet 112",
+    "category": "Tablet",
+    "brand": "Pioneer",
+    "unit_price": 46095.01,
+    "stock_quantity": 44,
+    "weight_kg": 4.166
+  },
+  {
+    "product_id": "P0113",
+    "product_name": "Pioneer Accessory 113",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 41540.71,
+    "stock_quantity": 224,
+    "weight_kg": 3.938
+  },
+  {
+    "product_id": "P0114",
+    "product_name": "Nimbus Tablet 114",
+    "category": "Tablet",
+    "brand": "Nimbus",
+    "unit_price": 83595.45,
+    "stock_quantity": 185,
+    "weight_kg": 4.804
+  },
+  {
+    "product_id": "P0115",
+    "product_name": "Orion Tablet 115",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 5911.15,
+    "stock_quantity": 159,
+    "weight_kg": 2.659
+  },
+  {
+    "product_id": "P0116",
+    "product_name": "Nimbus Tablet 116",
+    "category": "Tablet",
+    "brand": "Nimbus",
+    "unit_price": 5851.56,
+    "stock_quantity": 226,
+    "weight_kg": 4.483
+  },
+  {
+    "product_id": "P0117",
+    "product_name": "Vertex Phone 117",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 52432.43,
+    "stock_quantity": 9,
+    "weight_kg": 6.23
+  },
+  {
+    "product_id": "P0118",
+    "product_name": "Nova Accessory 118",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 29911.48,
+    "stock_quantity": 206,
+    "weight_kg": 5.292
+  },
+  {
+    "product_id": "P0119",
+    "product_name": "Nova Storage 119",
+    "category": "Storage",
+    "brand": "Nova",
+    "unit_price": 16352.65,
+    "stock_quantity": 147,
+    "weight_kg": 5.6
+  },
+  {
+    "product_id": "P0120",
+    "product_name": "Nova Storage 120",
+    "category": "Storage",
+    "brand": "Nova",
+    "unit_price": 46375.01,
+    "stock_quantity": 130,
+    "weight_kg": 1.727
+  },
+  {
+    "product_id": "P0121",
+    "product_name": "Aster Laptop 121",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 41616.35,
+    "stock_quantity": 138,
+    "weight_kg": 6.405
+  },
+  {
+    "product_id": "P0122",
+    "product_name": "Aster Phone 122",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 35582.68,
+    "stock_quantity": 83,
+    "weight_kg": 1.673
+  },
+  {
+    "product_id": "P0123",
+    "product_name": "Pioneer Phone 123",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 71263.78,
+    "stock_quantity": 107,
+    "weight_kg": 2.527
+  },
+  {
+    "product_id": "P0124",
+    "product_name": "Vertex Laptop 124",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 23056.97,
+    "stock_quantity": 222,
+    "weight_kg": 5.798
+  },
+  {
+    "product_id": "P0125",
+    "product_name": "Vertex Storage 125",
+    "category": "Storage",
+    "brand": "Vertex",
+    "unit_price": 29202.5,
+    "stock_quantity": 23,
+    "weight_kg": 5.804
+  },
+  {
+    "product_id": "P0126",
+    "product_name": "Pioneer Storage 126",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 10283.82,
+    "stock_quantity": 21,
+    "weight_kg": 2.957
+  },
+  {
+    "product_id": "P0127",
+    "product_name": "Nimbus Phone 127",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 70359.85,
+    "stock_quantity": 145,
+    "weight_kg": 1.669
+  },
+  {
+    "product_id": "P0128",
+    "product_name": "Vertex Laptop 128",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 46145.06,
+    "stock_quantity": 239,
+    "weight_kg": 5.796
+  },
+  {
+    "product_id": "P0129",
+    "product_name": "Aster Laptop 129",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 9955.09,
+    "stock_quantity": 97,
+    "weight_kg": 3.297
+  },
+  {
+    "product_id": "P0130",
+    "product_name": "Pioneer Phone 130",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 45119.65,
+    "stock_quantity": 187,
+    "weight_kg": 7.352
+  },
+  {
+    "product_id": "P0131",
+    "product_name": "Nova Accessory 131",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 14265.43,
+    "stock_quantity": 43,
+    "weight_kg": 7.743
+  },
+  {
+    "product_id": "P0132",
+    "product_name": "Aster Laptop 132",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 5966.24,
+    "stock_quantity": 87,
+    "weight_kg": 3.308
+  },
+  {
+    "product_id": "P0133",
+    "product_name": "Aster Phone 133",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 18604.14,
+    "stock_quantity": 157,
+    "weight_kg": 2.12
+  },
+  {
+    "product_id": "P0134",
+    "product_name": "Vertex Tablet 134",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 34673.14,
+    "stock_quantity": 233,
+    "weight_kg": 7.323
+  },
+  {
+    "product_id": "P0135",
+    "product_name": "Vertex Laptop 135",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 51808.1,
+    "stock_quantity": 99,
+    "weight_kg": 0.925
+  },
+  {
+    "product_id": "P0136",
+    "product_name": "Aster Monitor 136",
+    "category": "Monitor",
+    "brand": "Aster",
+    "unit_price": 9779.62,
+    "stock_quantity": 63,
+    "weight_kg": 7.184
+  },
+  {
+    "product_id": "P0137",
+    "product_name": "Pioneer Accessory 137",
+    "category": "Accessory",
+    "brand": "Pioneer",
+    "unit_price": 50903.65,
+    "stock_quantity": 192,
+    "weight_kg": 6.597
+  },
+  {
+    "product_id": "P0138",
+    "product_name": "Nova Phone 138",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 40219.73,
+    "stock_quantity": 138,
+    "weight_kg": 5.277
+  },
+  {
+    "product_id": "P0139",
+    "product_name": "Orion Tablet 139",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 84501.76,
+    "stock_quantity": 155,
+    "weight_kg": 3.178
+  },
+  {
+    "product_id": "P0140",
+    "product_name": "Aster Phone 140",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 37426.07,
+    "stock_quantity": 166,
+    "weight_kg": 1.812
+  },
+  {
+    "product_id": "P0141",
+    "product_name": "Pioneer Phone 141",
+    "category": "Phone",
+    "brand": "Pioneer",
+    "unit_price": 41456.5,
+    "stock_quantity": 1,
+    "weight_kg": 7.823
+  },
+  {
+    "product_id": "P0142",
+    "product_name": "Nimbus Phone 142",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 22694.94,
+    "stock_quantity": 6,
+    "weight_kg": 7.316
+  },
+  {
+    "product_id": "P0143",
+    "product_name": "Orion Storage 143",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 36418.96,
+    "stock_quantity": 129,
+    "weight_kg": 2.163
+  },
+  {
+    "product_id": "P0144",
+    "product_name": "Vertex Tablet 144",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 73995.47,
+    "stock_quantity": 245,
+    "weight_kg": 4.514
+  },
+  {
+    "product_id": "P0145",
+    "product_name": "Pioneer Storage 145",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 51925.75,
+    "stock_quantity": 161,
+    "weight_kg": 2.959
+  },
+  {
+    "product_id": "P0146",
+    "product_name": "Nova Phone 146",
+    "category": "Phone",
+    "brand": "Nova",
+    "unit_price": 41043.93,
+    "stock_quantity": 90,
+    "weight_kg": 4.622
+  },
+  {
+    "product_id": "P0147",
+    "product_name": "Pioneer Tablet 147",
+    "category": "Tablet",
+    "brand": "Pioneer",
+    "unit_price": 29647.33,
+    "stock_quantity": 218,
+    "weight_kg": 6.315
+  },
+  {
+    "product_id": "P0148",
+    "product_name": "Nova Laptop 148",
+    "category": "Laptop",
+    "brand": "Nova",
+    "unit_price": 51102.5,
+    "stock_quantity": 81,
+    "weight_kg": 0.611
+  },
+  {
+    "product_id": "P0149",
+    "product_name": "Vertex Accessory 149",
+    "category": "Accessory",
+    "brand": "Vertex",
+    "unit_price": 61528.72,
+    "stock_quantity": 161,
+    "weight_kg": 0.999
+  },
+  {
+    "product_id": "P0150",
+    "product_name": "Nova Accessory 150",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 41707.01,
+    "stock_quantity": 4,
+    "weight_kg": 2.921
+  },
+  {
+    "product_id": "P0151",
+    "product_name": "Nova Tablet 151",
+    "category": "Tablet",
+    "brand": "Nova",
+    "unit_price": 71852.02,
+    "stock_quantity": 123,
+    "weight_kg": 3.603
+  },
+  {
+    "product_id": "P0152",
+    "product_name": "Pioneer Storage 152",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 23845.89,
+    "stock_quantity": 78,
+    "weight_kg": 6.92
+  },
+  {
+    "product_id": "P0153",
+    "product_name": "Nimbus Accessory 153",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 46896.41,
+    "stock_quantity": 45,
+    "weight_kg": 5.697
+  },
+  {
+    "product_id": "P0154",
+    "product_name": "Orion Phone 154",
+    "category": "Phone",
+    "brand": "Orion",
+    "unit_price": 80553.53,
+    "stock_quantity": 70,
+    "weight_kg": 3.632
+  },
+  {
+    "product_id": "P0155",
+    "product_name": "Aster Laptop 155",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 43539.58,
+    "stock_quantity": 65,
+    "weight_kg": 0.216
+  },
+  {
+    "product_id": "P0156",
+    "product_name": "Pioneer Storage 156",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 50915.38,
+    "stock_quantity": 108,
+    "weight_kg": 1.984
+  },
+  {
+    "product_id": "P0157",
+    "product_name": "Orion Phone 157",
+    "category": "Phone",
+    "brand": "Orion",
+    "unit_price": 28206.03,
+    "stock_quantity": 40,
+    "weight_kg": 1.268
+  },
+  {
+    "product_id": "P0158",
+    "product_name": "Aster Phone 158",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 69669.1,
+    "stock_quantity": 15,
+    "weight_kg": 4.114
+  },
+  {
+    "product_id": "P0159",
+    "product_name": "Pioneer Tablet 159",
+    "category": "Tablet",
+    "brand": "Pioneer",
+    "unit_price": 30541.96,
+    "stock_quantity": 181,
+    "weight_kg": 7.007
+  },
+  {
+    "product_id": "P0160",
+    "product_name": "Vertex Tablet 160",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 41445.84,
+    "stock_quantity": 65,
+    "weight_kg": 7.785
+  },
+  {
+    "product_id": "P0161",
+    "product_name": "Orion Accessory 161",
+    "category": "Accessory",
+    "brand": "Orion",
+    "unit_price": 29462.7,
+    "stock_quantity": 87,
+    "weight_kg": 4.825
+  },
+  {
+    "product_id": "P0162",
+    "product_name": "Aster Laptop 162",
+    "category": "Laptop",
+    "brand": "Aster",
+    "unit_price": 80594.35,
+    "stock_quantity": 127,
+    "weight_kg": 2.906
+  },
+  {
+    "product_id": "P0163",
+    "product_name": "Nova Accessory 163",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 62025.89,
+    "stock_quantity": 204,
+    "weight_kg": 6.227
+  },
+  {
+    "product_id": "P0164",
+    "product_name": "Pioneer Monitor 164",
+    "category": "Monitor",
+    "brand": "Pioneer",
+    "unit_price": 13090.71,
+    "stock_quantity": 101,
+    "weight_kg": 6.23
+  },
+  {
+    "product_id": "P0165",
+    "product_name": "Aster Storage 165",
+    "category": "Storage",
+    "brand": "Aster",
+    "unit_price": 4290.65,
+    "stock_quantity": 182,
+    "weight_kg": 4.997
+  },
+  {
+    "product_id": "P0166",
+    "product_name": "Aster Phone 166",
+    "category": "Phone",
+    "brand": "Aster",
+    "unit_price": 46890.17,
+    "stock_quantity": 28,
+    "weight_kg": 5.314
+  },
+  {
+    "product_id": "P0167",
+    "product_name": "Nimbus Monitor 167",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 22940.74,
+    "stock_quantity": 4,
+    "weight_kg": 4.975
+  },
+  {
+    "product_id": "P0168",
+    "product_name": "Nimbus Monitor 168",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 67989.15,
+    "stock_quantity": 227,
+    "weight_kg": 0.659
+  },
+  {
+    "product_id": "P0169",
+    "product_name": "Nova Tablet 169",
+    "category": "Tablet",
+    "brand": "Nova",
+    "unit_price": 73951.77,
+    "stock_quantity": 249,
+    "weight_kg": 1.234
+  },
+  {
+    "product_id": "P0170",
+    "product_name": "Orion Storage 170",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 55114.8,
+    "stock_quantity": 100,
+    "weight_kg": 0.136
+  },
+  {
+    "product_id": "P0171",
+    "product_name": "Nimbus Phone 171",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 27134.66,
+    "stock_quantity": 69,
+    "weight_kg": 7.063
+  },
+  {
+    "product_id": "P0172",
+    "product_name": "Vertex Tablet 172",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 50087.6,
+    "stock_quantity": 182,
+    "weight_kg": 1.674
+  },
+  {
+    "product_id": "P0173",
+    "product_name": "Orion Storage 173",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 7417.14,
+    "stock_quantity": 93,
+    "weight_kg": 7.567
+  },
+  {
+    "product_id": "P0174",
+    "product_name": "Pioneer Laptop 174",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 51951.98,
+    "stock_quantity": 215,
+    "weight_kg": 5.032
+  },
+  {
+    "product_id": "P0175",
+    "product_name": "Pioneer Storage 175",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 10300.47,
+    "stock_quantity": 108,
+    "weight_kg": 7.272
+  },
+  {
+    "product_id": "P0176",
+    "product_name": "Vertex Laptop 176",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "unit_price": 81827.08,
+    "stock_quantity": 4,
+    "weight_kg": 7.349
+  },
+  {
+    "product_id": "P0177",
+    "product_name": "Orion Monitor 177",
+    "category": "Monitor",
+    "brand": "Orion",
+    "unit_price": 73884.71,
+    "stock_quantity": 172,
+    "weight_kg": 2.641
+  },
+  {
+    "product_id": "P0178",
+    "product_name": "Nimbus Accessory 178",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 56681.48,
+    "stock_quantity": 148,
+    "weight_kg": 7.346
+  },
+  {
+    "product_id": "P0179",
+    "product_name": "Vertex Storage 179",
+    "category": "Storage",
+    "brand": "Vertex",
+    "unit_price": 15367.32,
+    "stock_quantity": 164,
+    "weight_kg": 7.718
+  },
+  {
+    "product_id": "P0180",
+    "product_name": "Nova Monitor 180",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 18544.16,
+    "stock_quantity": 140,
+    "weight_kg": 7.247
+  },
+  {
+    "product_id": "P0181",
+    "product_name": "Nova Monitor 181",
+    "category": "Monitor",
+    "brand": "Nova",
+    "unit_price": 7115.6,
+    "stock_quantity": 176,
+    "weight_kg": 4.869
+  },
+  {
+    "product_id": "P0182",
+    "product_name": "Orion Accessory 182",
+    "category": "Accessory",
+    "brand": "Orion",
+    "unit_price": 21320.26,
+    "stock_quantity": 80,
+    "weight_kg": 4.28
+  },
+  {
+    "product_id": "P0183",
+    "product_name": "Pioneer Monitor 183",
+    "category": "Monitor",
+    "brand": "Pioneer",
+    "unit_price": 41076.03,
+    "stock_quantity": 237,
+    "weight_kg": 2.572
+  },
+  {
+    "product_id": "P0184",
+    "product_name": "Aster Accessory 184",
+    "category": "Accessory",
+    "brand": "Aster",
+    "unit_price": 27776.39,
+    "stock_quantity": 1,
+    "weight_kg": 0.811
+  },
+  {
+    "product_id": "P0185",
+    "product_name": "Orion Accessory 185",
+    "category": "Accessory",
+    "brand": "Orion",
+    "unit_price": 58137.55,
+    "stock_quantity": 11,
+    "weight_kg": 2.618
+  },
+  {
+    "product_id": "P0186",
+    "product_name": "Pioneer Laptop 186",
+    "category": "Laptop",
+    "brand": "Pioneer",
+    "unit_price": 21154.44,
+    "stock_quantity": 183,
+    "weight_kg": 6.156
+  },
+  {
+    "product_id": "P0187",
+    "product_name": "Nimbus Monitor 187",
+    "category": "Monitor",
+    "brand": "Nimbus",
+    "unit_price": 18058.89,
+    "stock_quantity": 2,
+    "weight_kg": 5.245
+  },
+  {
+    "product_id": "P0188",
+    "product_name": "Nimbus Accessory 188",
+    "category": "Accessory",
+    "brand": "Nimbus",
+    "unit_price": 25731.7,
+    "stock_quantity": 79,
+    "weight_kg": 7.336
+  },
+  {
+    "product_id": "P0189",
+    "product_name": "Orion Storage 189",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 68921.43,
+    "stock_quantity": 225,
+    "weight_kg": 0.159
+  },
+  {
+    "product_id": "P0190",
+    "product_name": "Pioneer Storage 190",
+    "category": "Storage",
+    "brand": "Pioneer",
+    "unit_price": 61992.82,
+    "stock_quantity": 235,
+    "weight_kg": 7.248
+  },
+  {
+    "product_id": "P0191",
+    "product_name": "Orion Phone 191",
+    "category": "Phone",
+    "brand": "Orion",
+    "unit_price": 18543.06,
+    "stock_quantity": 203,
+    "weight_kg": 0.432
+  },
+  {
+    "product_id": "P0192",
+    "product_name": "Orion Accessory 192",
+    "category": "Accessory",
+    "brand": "Orion",
+    "unit_price": 46546.53,
+    "stock_quantity": 15,
+    "weight_kg": 0.693
+  },
+  {
+    "product_id": "P0193",
+    "product_name": "Vertex Phone 193",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 46990.44,
+    "stock_quantity": 86,
+    "weight_kg": 4.573
+  },
+  {
+    "product_id": "P0194",
+    "product_name": "Orion Tablet 194",
+    "category": "Tablet",
+    "brand": "Orion",
+    "unit_price": 75773.05,
+    "stock_quantity": 139,
+    "weight_kg": 1.909
+  },
+  {
+    "product_id": "P0195",
+    "product_name": "Vertex Phone 195",
+    "category": "Phone",
+    "brand": "Vertex",
+    "unit_price": 59063.1,
+    "stock_quantity": 202,
+    "weight_kg": 0.908
+  },
+  {
+    "product_id": "P0196",
+    "product_name": "Aster Monitor 196",
+    "category": "Monitor",
+    "brand": "Aster",
+    "unit_price": 82359.94,
+    "stock_quantity": 115,
+    "weight_kg": 2.975
+  },
+  {
+    "product_id": "P0197",
+    "product_name": "Nimbus Phone 197",
+    "category": "Phone",
+    "brand": "Nimbus",
+    "unit_price": 46759.87,
+    "stock_quantity": 96,
+    "weight_kg": 6.597
+  },
+  {
+    "product_id": "P0198",
+    "product_name": "Nova Accessory 198",
+    "category": "Accessory",
+    "brand": "Nova",
+    "unit_price": 72644.77,
+    "stock_quantity": 111,
+    "weight_kg": 7.989
+  },
+  {
+    "product_id": "P0199",
+    "product_name": "Orion Storage 199",
+    "category": "Storage",
+    "brand": "Orion",
+    "unit_price": 12056.66,
+    "stock_quantity": 52,
+    "weight_kg": 2.475
+  },
+  {
+    "product_id": "P0200",
+    "product_name": "Vertex Tablet 200",
+    "category": "Tablet",
+    "brand": "Vertex",
+    "unit_price": 47470.34,
+    "stock_quantity": 99,
+    "weight_kg": 2.177
+  }
+]

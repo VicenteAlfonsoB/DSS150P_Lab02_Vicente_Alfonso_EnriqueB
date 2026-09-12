@@ -1,0 +1,1344 @@
+[
+  {
+    "event_id": "E0001",
+    "customer_id": "C0024",
+    "event_type": "page_view",
+    "amount": 4210.54,
+    "updated_at": "2026-08-01T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0002",
+    "customer_id": "C0008",
+    "event_type": "support",
+    "amount": 4882.46,
+    "updated_at": "2026-08-01T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0003",
+    "customer_id": "C0061",
+    "event_type": "page_view",
+    "amount": 3875.23,
+    "updated_at": "2026-08-01T17:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0004",
+    "customer_id": "C0025",
+    "event_type": "add_to_cart",
+    "amount": 587.17,
+    "updated_at": "2026-08-01T20:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0005",
+    "customer_id": "C0230",
+    "event_type": "checkout",
+    "amount": 2860.24,
+    "updated_at": "2026-08-01T23:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0006",
+    "customer_id": "C0114",
+    "event_type": "add_to_cart",
+    "amount": 2464.12,
+    "updated_at": "2026-08-02T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0007",
+    "customer_id": "C0241",
+    "event_type": "page_view",
+    "amount": 2271.8,
+    "updated_at": "2026-08-02T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0008",
+    "customer_id": "C0157",
+    "event_type": "add_to_cart",
+    "amount": 593.1,
+    "updated_at": "2026-08-02T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0009",
+    "customer_id": "C0036",
+    "event_type": "payment",
+    "amount": 2565.98,
+    "updated_at": "2026-08-02T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0010",
+    "customer_id": "C0161",
+    "event_type": "payment",
+    "amount": 1409.98,
+    "updated_at": "2026-08-02T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0011",
+    "customer_id": "C0162",
+    "event_type": "checkout",
+    "amount": 260.36,
+    "updated_at": "2026-08-02T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0012",
+    "customer_id": "C0189",
+    "event_type": "page_view",
+    "amount": 3191.16,
+    "updated_at": "2026-08-02T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0013",
+    "customer_id": "C0174",
+    "event_type": "page_view",
+    "amount": 329.2,
+    "updated_at": "2026-08-02T23:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0014",
+    "customer_id": "C0068",
+    "event_type": "checkout",
+    "amount": 2446.77,
+    "updated_at": "2026-08-03T02:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0015",
+    "customer_id": "C0019",
+    "event_type": "page_view",
+    "amount": 4541.08,
+    "updated_at": "2026-08-03T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0016",
+    "customer_id": "C0182",
+    "event_type": "page_view",
+    "amount": 2400.18,
+    "updated_at": "2026-08-03T08:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0017",
+    "customer_id": "C0036",
+    "event_type": "checkout",
+    "amount": 4930.77,
+    "updated_at": "2026-08-03T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0018",
+    "customer_id": "C0178",
+    "event_type": "add_to_cart",
+    "amount": 2916.98,
+    "updated_at": "2026-08-03T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0019",
+    "customer_id": "C0215",
+    "event_type": "payment",
+    "amount": 1421.46,
+    "updated_at": "2026-08-03T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0020",
+    "customer_id": "C0073",
+    "event_type": "page_view",
+    "amount": 651.71,
+    "updated_at": "2026-08-03T20:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0021",
+    "customer_id": "C0190",
+    "event_type": "page_view",
+    "amount": 3204.73,
+    "updated_at": "2026-08-03T23:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0022",
+    "customer_id": "C0018",
+    "event_type": "add_to_cart",
+    "amount": 348.39,
+    "updated_at": "2026-08-04T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0023",
+    "customer_id": "C0028",
+    "event_type": "page_view",
+    "amount": 2786.09,
+    "updated_at": "2026-08-04T05:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0024",
+    "customer_id": "C0038",
+    "event_type": "payment",
+    "amount": 4867.2,
+    "updated_at": "2026-08-04T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0025",
+    "customer_id": "C0134",
+    "event_type": "page_view",
+    "amount": 390.71,
+    "updated_at": "2026-08-04T11:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0026",
+    "customer_id": "C0142",
+    "event_type": "add_to_cart",
+    "amount": 4354.36,
+    "updated_at": "2026-08-04T14:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0027",
+    "customer_id": "C0028",
+    "event_type": "checkout",
+    "amount": 2149.15,
+    "updated_at": "2026-08-04T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0028",
+    "customer_id": "C0166",
+    "event_type": "support",
+    "amount": 3939.61,
+    "updated_at": "2026-08-04T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0029",
+    "customer_id": "C0239",
+    "event_type": "payment",
+    "amount": 4525.19,
+    "updated_at": "2026-08-04T23:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0030",
+    "customer_id": "C0101",
+    "event_type": "page_view",
+    "amount": 390.26,
+    "updated_at": "2026-08-05T02:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0031",
+    "customer_id": "C0197",
+    "event_type": "add_to_cart",
+    "amount": 889.22,
+    "updated_at": "2026-08-05T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0032",
+    "customer_id": "C0023",
+    "event_type": "payment",
+    "amount": 3478.42,
+    "updated_at": "2026-08-05T08:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0033",
+    "customer_id": "C0172",
+    "event_type": "add_to_cart",
+    "amount": 1.86,
+    "updated_at": "2026-08-05T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0034",
+    "customer_id": "C0191",
+    "event_type": "checkout",
+    "amount": 3144.39,
+    "updated_at": "2026-08-05T14:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0035",
+    "customer_id": "C0169",
+    "event_type": "checkout",
+    "amount": 1904.0,
+    "updated_at": "2026-08-05T17:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0036",
+    "customer_id": "C0028",
+    "event_type": "page_view",
+    "amount": 2017.7,
+    "updated_at": "2026-08-05T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0037",
+    "customer_id": "C0002",
+    "event_type": "payment",
+    "amount": 2334.69,
+    "updated_at": "2026-08-05T23:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0038",
+    "customer_id": "C0249",
+    "event_type": "payment",
+    "amount": 2113.58,
+    "updated_at": "2026-08-06T02:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0039",
+    "customer_id": "C0177",
+    "event_type": "checkout",
+    "amount": 822.96,
+    "updated_at": "2026-08-06T05:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0040",
+    "customer_id": "C0025",
+    "event_type": "support",
+    "amount": 4773.13,
+    "updated_at": "2026-08-06T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0041",
+    "customer_id": "C0038",
+    "event_type": "checkout",
+    "amount": 4677.62,
+    "updated_at": "2026-08-06T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0042",
+    "customer_id": "C0146",
+    "event_type": "checkout",
+    "amount": 695.79,
+    "updated_at": "2026-08-06T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0043",
+    "customer_id": "C0247",
+    "event_type": "add_to_cart",
+    "amount": 4559.8,
+    "updated_at": "2026-08-06T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0044",
+    "customer_id": "C0208",
+    "event_type": "page_view",
+    "amount": 1894.68,
+    "updated_at": "2026-08-06T20:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0045",
+    "customer_id": "C0078",
+    "event_type": "checkout",
+    "amount": 2388.31,
+    "updated_at": "2026-08-06T23:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0046",
+    "customer_id": "C0112",
+    "event_type": "payment",
+    "amount": 2120.43,
+    "updated_at": "2026-08-07T02:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0047",
+    "customer_id": "C0013",
+    "event_type": "payment",
+    "amount": 4729.9,
+    "updated_at": "2026-08-07T05:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0048",
+    "customer_id": "C0083",
+    "event_type": "checkout",
+    "amount": 2583.03,
+    "updated_at": "2026-08-07T08:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0049",
+    "customer_id": "C0205",
+    "event_type": "support",
+    "amount": 1952.13,
+    "updated_at": "2026-08-07T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0050",
+    "customer_id": "C0069",
+    "event_type": "payment",
+    "amount": 191.42,
+    "updated_at": "2026-08-07T14:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0051",
+    "customer_id": "C0026",
+    "event_type": "support",
+    "amount": 1369.04,
+    "updated_at": "2026-08-07T17:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0052",
+    "customer_id": "C0222",
+    "event_type": "checkout",
+    "amount": 342.6,
+    "updated_at": "2026-08-07T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0053",
+    "customer_id": "C0044",
+    "event_type": "add_to_cart",
+    "amount": 2166.67,
+    "updated_at": "2026-08-07T23:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0054",
+    "customer_id": "C0092",
+    "event_type": "page_view",
+    "amount": 2710.2,
+    "updated_at": "2026-08-08T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0055",
+    "customer_id": "C0023",
+    "event_type": "add_to_cart",
+    "amount": 1401.35,
+    "updated_at": "2026-08-08T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0056",
+    "customer_id": "C0045",
+    "event_type": "add_to_cart",
+    "amount": 559.4,
+    "updated_at": "2026-08-08T08:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0057",
+    "customer_id": "C0012",
+    "event_type": "payment",
+    "amount": 1281.15,
+    "updated_at": "2026-08-08T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0058",
+    "customer_id": "C0017",
+    "event_type": "page_view",
+    "amount": 964.08,
+    "updated_at": "2026-08-08T14:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0059",
+    "customer_id": "C0004",
+    "event_type": "page_view",
+    "amount": 4689.06,
+    "updated_at": "2026-08-08T17:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0060",
+    "customer_id": "C0139",
+    "event_type": "support",
+    "amount": 3308.98,
+    "updated_at": "2026-08-08T20:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0061",
+    "customer_id": "C0156",
+    "event_type": "support",
+    "amount": 3490.01,
+    "updated_at": "2026-08-08T23:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0062",
+    "customer_id": "C0105",
+    "event_type": "page_view",
+    "amount": 4389.65,
+    "updated_at": "2026-08-09T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0063",
+    "customer_id": "C0219",
+    "event_type": "page_view",
+    "amount": 2029.16,
+    "updated_at": "2026-08-09T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0064",
+    "customer_id": "C0213",
+    "event_type": "support",
+    "amount": 143.45,
+    "updated_at": "2026-08-09T08:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0065",
+    "customer_id": "C0117",
+    "event_type": "checkout",
+    "amount": 928.02,
+    "updated_at": "2026-08-09T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0066",
+    "customer_id": "C0106",
+    "event_type": "add_to_cart",
+    "amount": 1491.68,
+    "updated_at": "2026-08-09T14:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0067",
+    "customer_id": "C0121",
+    "event_type": "page_view",
+    "amount": 4852.95,
+    "updated_at": "2026-08-09T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0068",
+    "customer_id": "C0170",
+    "event_type": "page_view",
+    "amount": 391.52,
+    "updated_at": "2026-08-09T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0069",
+    "customer_id": "C0156",
+    "event_type": "add_to_cart",
+    "amount": 2090.73,
+    "updated_at": "2026-08-09T23:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0070",
+    "customer_id": "C0029",
+    "event_type": "checkout",
+    "amount": 3856.43,
+    "updated_at": "2026-08-10T02:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0071",
+    "customer_id": "C0036",
+    "event_type": "support",
+    "amount": 50.55,
+    "updated_at": "2026-08-10T05:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0072",
+    "customer_id": "C0022",
+    "event_type": "support",
+    "amount": 508.55,
+    "updated_at": "2026-08-10T08:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0073",
+    "customer_id": "C0105",
+    "event_type": "page_view",
+    "amount": 2915.3,
+    "updated_at": "2026-08-10T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0074",
+    "customer_id": "C0248",
+    "event_type": "add_to_cart",
+    "amount": 1156.58,
+    "updated_at": "2026-08-10T14:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0075",
+    "customer_id": "C0125",
+    "event_type": "page_view",
+    "amount": 4953.77,
+    "updated_at": "2026-08-10T17:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0076",
+    "customer_id": "C0140",
+    "event_type": "support",
+    "amount": 3513.91,
+    "updated_at": "2026-08-10T20:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0077",
+    "customer_id": "C0089",
+    "event_type": "checkout",
+    "amount": 241.64,
+    "updated_at": "2026-08-10T23:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0078",
+    "customer_id": "C0081",
+    "event_type": "support",
+    "amount": 2564.16,
+    "updated_at": "2026-08-11T02:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0079",
+    "customer_id": "C0233",
+    "event_type": "payment",
+    "amount": 4426.57,
+    "updated_at": "2026-08-11T05:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0080",
+    "customer_id": "C0187",
+    "event_type": "add_to_cart",
+    "amount": 1197.38,
+    "updated_at": "2026-08-11T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0081",
+    "customer_id": "C0019",
+    "event_type": "checkout",
+    "amount": 301.54,
+    "updated_at": "2026-08-11T11:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0082",
+    "customer_id": "C0106",
+    "event_type": "payment",
+    "amount": 429.27,
+    "updated_at": "2026-08-11T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0083",
+    "customer_id": "C0112",
+    "event_type": "page_view",
+    "amount": 2417.39,
+    "updated_at": "2026-08-11T17:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0084",
+    "customer_id": "C0191",
+    "event_type": "payment",
+    "amount": 3003.47,
+    "updated_at": "2026-08-11T20:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0085",
+    "customer_id": "C0222",
+    "event_type": "payment",
+    "amount": 2432.58,
+    "updated_at": "2026-08-11T23:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0086",
+    "customer_id": "C0010",
+    "event_type": "support",
+    "amount": 1371.16,
+    "updated_at": "2026-08-12T02:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0087",
+    "customer_id": "C0182",
+    "event_type": "checkout",
+    "amount": 4636.32,
+    "updated_at": "2026-08-12T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0088",
+    "customer_id": "C0022",
+    "event_type": "checkout",
+    "amount": 3035.34,
+    "updated_at": "2026-08-12T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0089",
+    "customer_id": "C0126",
+    "event_type": "page_view",
+    "amount": 317.05,
+    "updated_at": "2026-08-12T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0090",
+    "customer_id": "C0208",
+    "event_type": "page_view",
+    "amount": 923.24,
+    "updated_at": "2026-08-12T14:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0091",
+    "customer_id": "C0116",
+    "event_type": "payment",
+    "amount": 3541.85,
+    "updated_at": "2026-08-12T17:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0092",
+    "customer_id": "C0198",
+    "event_type": "support",
+    "amount": 1046.6,
+    "updated_at": "2026-08-12T20:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0093",
+    "customer_id": "C0219",
+    "event_type": "add_to_cart",
+    "amount": 1722.94,
+    "updated_at": "2026-08-12T23:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0094",
+    "customer_id": "C0149",
+    "event_type": "payment",
+    "amount": 589.82,
+    "updated_at": "2026-08-13T02:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0095",
+    "customer_id": "C0160",
+    "event_type": "add_to_cart",
+    "amount": 3122.35,
+    "updated_at": "2026-08-13T05:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0096",
+    "customer_id": "C0127",
+    "event_type": "checkout",
+    "amount": 705.31,
+    "updated_at": "2026-08-13T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0097",
+    "customer_id": "C0017",
+    "event_type": "checkout",
+    "amount": 1038.53,
+    "updated_at": "2026-08-13T11:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0098",
+    "customer_id": "C0174",
+    "event_type": "support",
+    "amount": 4174.27,
+    "updated_at": "2026-08-13T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0099",
+    "customer_id": "C0249",
+    "event_type": "add_to_cart",
+    "amount": 1900.36,
+    "updated_at": "2026-08-13T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0100",
+    "customer_id": "C0068",
+    "event_type": "add_to_cart",
+    "amount": 1728.93,
+    "updated_at": "2026-08-13T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0101",
+    "customer_id": "C0149",
+    "event_type": "support",
+    "amount": 591.08,
+    "updated_at": "2026-08-13T23:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0102",
+    "customer_id": "C0131",
+    "event_type": "payment",
+    "amount": 2039.44,
+    "updated_at": "2026-08-14T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0103",
+    "customer_id": "C0153",
+    "event_type": "add_to_cart",
+    "amount": 144.0,
+    "updated_at": "2026-08-14T05:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0104",
+    "customer_id": "C0023",
+    "event_type": "support",
+    "amount": 4465.57,
+    "updated_at": "2026-08-14T08:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0105",
+    "customer_id": "C0122",
+    "event_type": "add_to_cart",
+    "amount": 3778.72,
+    "updated_at": "2026-08-14T11:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0106",
+    "customer_id": "C0203",
+    "event_type": "support",
+    "amount": 4312.05,
+    "updated_at": "2026-08-14T14:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0107",
+    "customer_id": "C0014",
+    "event_type": "page_view",
+    "amount": 2660.3,
+    "updated_at": "2026-08-14T17:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0108",
+    "customer_id": "C0080",
+    "event_type": "add_to_cart",
+    "amount": 3617.42,
+    "updated_at": "2026-08-14T20:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0109",
+    "customer_id": "C0097",
+    "event_type": "add_to_cart",
+    "amount": 3953.28,
+    "updated_at": "2026-08-14T23:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0110",
+    "customer_id": "C0090",
+    "event_type": "page_view",
+    "amount": 1835.58,
+    "updated_at": "2026-08-15T02:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0111",
+    "customer_id": "C0149",
+    "event_type": "support",
+    "amount": 3438.82,
+    "updated_at": "2026-08-15T05:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0112",
+    "customer_id": "C0035",
+    "event_type": "support",
+    "amount": 4201.24,
+    "updated_at": "2026-08-15T08:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0113",
+    "customer_id": "C0172",
+    "event_type": "support",
+    "amount": 3569.44,
+    "updated_at": "2026-08-15T11:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0114",
+    "customer_id": "C0127",
+    "event_type": "payment",
+    "amount": 1275.78,
+    "updated_at": "2026-08-15T14:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0115",
+    "customer_id": "C0210",
+    "event_type": "add_to_cart",
+    "amount": 2850.56,
+    "updated_at": "2026-08-15T17:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0116",
+    "customer_id": "C0150",
+    "event_type": "page_view",
+    "amount": 3969.16,
+    "updated_at": "2026-08-15T20:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0117",
+    "customer_id": "C0018",
+    "event_type": "payment",
+    "amount": 1743.34,
+    "updated_at": "2026-08-15T23:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0118",
+    "customer_id": "C0033",
+    "event_type": "add_to_cart",
+    "amount": 4886.64,
+    "updated_at": "2026-08-16T02:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0119",
+    "customer_id": "C0012",
+    "event_type": "payment",
+    "amount": 150.25,
+    "updated_at": "2026-08-16T05:00:00",
+    "metadata": {
+      "channel": "web",
+      "campaign": "retarget"
+    }
+  },
+  {
+    "event_id": "E0120",
+    "customer_id": "C0114",
+    "event_type": "add_to_cart",
+    "amount": 1041.42,
+    "updated_at": "2026-08-16T08:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "none"
+    }
+  },
+  {
+    "event_id": "E0020",
+    "customer_id": "C0073",
+    "event_type": "page_view",
+    "amount": 999.99,
+    "updated_at": "2026-08-21T09:00:00",
+    "metadata": {
+      "channel": "partner",
+      "campaign": "launch"
+    }
+  },
+  {
+    "event_id": "E0055",
+    "customer_id": "C0023",
+    "event_type": "add_to_cart",
+    "amount": 888.88,
+    "updated_at": "2026-08-21T10:00:00",
+    "metadata": {
+      "channel": "mobile",
+      "campaign": "retarget"
+    }
+  }
+]

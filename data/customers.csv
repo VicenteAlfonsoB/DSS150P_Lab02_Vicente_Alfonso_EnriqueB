@@ -1,0 +1,251 @@
+customer_id,first_name,last_name,email,city,signup_date,customer_segment
+C0001,Kevin,Bautista,kevin.bautista@example.com,Pasig,2025-04-27,Professional
+C0002,Paolo,Mendoza,paolo.mendoza@example.com,Makati,2025-08-04,Retail
+C0003,Julia,Ramos,julia.ramos@example.com,Taguig,2026-01-15,SME
+C0004,Marco,Reyes,marco.reyes@example.com,Makati,2026-02-21,Student
+C0005,Paolo,Villanueva,paolo.villanueva@example.com,Quezon City,2025-12-15,Professional
+C0006,Paolo,Villanueva,paolo.villanueva@example.com,Makati,2025-01-07,Retail
+C0007,Diego,Mendoza,diego.mendoza@example.com,Caloocan,2025-04-16,Professional
+C0008,Tomas,Lim,tomas.lim@example.com,Parañaque,2025-10-03,Retail
+C0009,Oscar,Torres,oscar.torres@example.com,Pasig,2025-01-18,Professional
+C0010,Oscar,Flores,oscar.flores@example.com,Marikina,2026-04-18,Professional
+C0011,Diego,Santos,diego.santos@example.com,Taguig,2026-05-08,Retail
+C0012,Queenie,Castillo,queenie.castillo@example.com,Makati,2025-02-07,Retail
+C0013,Ramon,Aquino,,Caloocan,2025-11-29,Student
+C0014,Ivan,Del Rosario,ivan.delrosario@example.com,Pasay,2025-02-03,Retail
+C0015,Lara,Villanueva,lara.villanueva@example.com,Makati,2026-02-27,SME
+C0016,Ella,Santos,ella.santos@example.com,Quezon City,2025-04-02,Professional
+C0017,Julia,Mercado,julia.mercado@example.com,Pasay,2025-07-26,Professional
+C0018,Ella,Pascual,ella.pascual@example.com,Pasig,2025-06-05,Retail
+C0019,Carla,Fernandez,carla.fernandez@example.com,Manila,2025-09-05,SME
+C0020,Kevin,Castillo,kevin.castillo@example.com,Quezon City,2025-12-07,SME
+C0021,Ana,Villanueva,ana.villanueva@example.com,Pasay,2025-04-03,Retail
+C0022,Sofia,Bautista,sofia.bautista@example.com,Taguig,2025-12-23,Retail
+C0023,Hannah,Del Rosario,hannah.delrosario@example.com,Parañaque,2025-09-02,Student
+C0024,Ella,Aquino,ella.aquino@example.com,Caloocan,2025-08-02,Student
+C0025,Lara,Villanueva,lara.villanueva@example.com,Pasig,2025-07-01,Retail
+C0026,Francis,Santos,francis.santos@example.com,Caloocan,2025-12-07,Retail
+C0027,Ivan,Pascual,ivan.pascual@example.com,Manila,2025-09-02,Retail
+C0028,Oscar,Santos,oscar.santos@example.com,Pasig,2026-02-19,Student
+C0029,Marco,Garcia,marco.garcia@example.com,Makati,2025-09-15,Professional
+C0030,Francis,Castillo,francis.castillo@example.com,Makati,2025-12-24,SME
+C0031,Julia,Torres,julia.torres@example.com,Quezon City,2026-04-15,Retail
+C0032,Francis,Del Rosario,francis.delrosario@example.com,Parañaque,2025-06-21,Retail
+C0033,Paolo,Del Rosario,paolo.delrosario@example.com,Quezon City,2025-12-21,Retail
+C0034,Marco,Aquino,marco.aquino@example.com,Caloocan,2025-02-11,SME
+C0035,Queenie,Ramos,queenie.ramos@example.com,Quezon City,2025-02-16,SME
+C0036,Kevin,Fernandez,kevin.fernandez@example.com,Pasay,2025-03-01,Student
+C0037,Grace,Lim,grace.lim@example.com,Marikina,2025-06-16,Student
+C0038,Ana,Del Rosario,ana.delrosario@example.com,Pasig,2025-11-16,SME
+C0039,Ella,Reyes,ella.reyes@example.com,Makati,2025-09-05,SME
+C0040,Ramon,Diaz,ramon.diaz@example.com,Pasig,2025-05-03,Retail
+C0041,Lara,Aquino,lara.aquino@example.com,Manila,2026-04-23,Retail
+C0042,Ivan,Flores,ivan.flores@example.com,Pasig,2025-03-03,Student
+C0043,Nina,Ramos,nina.ramos@example.com,Parañaque,2026-01-04,Student
+C0044,Oscar,Flores,oscar.flores@example.com,Taguig,2025-07-27,SME
+C0045,Ana,Navarro,ana.navarro@example.com,Marikina,2025-04-20,Retail
+C0046,Julia,Castillo,julia.castillo@example.com,Marikina,2025-08-23,Professional
+C0047,Nina,Del Rosario,nina.delrosario@example.com,Marikina,2026-02-02,SME
+C0048,Kevin,Santos,,Manila,2025-12-16,Student
+C0049,Oscar,Ramos,oscar.ramos@example.com,Manila,2026-04-15,SME
+C0050,Kevin,Lim,kevin.lim@example.com,Mandaluyong,2025-12-11,Student
+C0051,Marco,Mercado,marco.mercado@example.com,Caloocan,2025-12-15,SME
+C0052,Julia,Villanueva,julia.villanueva@example.com,Caloocan,2025-10-04,Retail
+C0053,Ramon,Diaz,ramon.diaz@example.com,Parañaque,2025-10-15,Retail
+C0054,Julia,Torres,julia.torres@example.com,Quezon City,2025-02-03,Retail
+C0055,Ben,Cruz,ben.cruz@example.com,Pasay,2025-04-30,SME
+C0056,Carla,Villanueva,carla.villanueva@example.com,Mandaluyong,2025-10-01,Retail
+C0057,Julia,Mendoza,julia.mendoza@example.com,Makati,2025-07-07,Professional
+C0058,Tomas,Fernandez,tomas.fernandez@example.com,Pasay,2025-10-06,Professional
+C0059,Nina,Ramos,nina.ramos@example.com,Caloocan,2026-03-14,SME
+C0060,Ella,Fernandez,ella.fernandez@example.com,Pasig,2025-01-09,Student
+C0061,Paolo,Tan,paolo.tan@example.com,Manila,2025-03-27,Professional
+C0062,Marco,Villanueva,marco.villanueva@example.com,Manila,2025-06-23,SME
+C0063,Ben,Villanueva,ben.villanueva@example.com,Manila,2025-06-18,Retail
+C0064,Francis,Ramos,francis.ramos@example.com,Pasay,2025-12-23,Professional
+C0065,Ella,Torres,ella.torres@example.com,Parañaque,2025-10-28,SME
+C0066,Ivan,Torres,ivan.torres@example.com,Manila,2025-12-30,Professional
+C0067,Oscar,Lim,oscar.lim@example.com,Parañaque,2025-02-22,SME
+C0068,Julia,Mercado,julia.mercado@example.com,Parañaque,2025-07-29,SME
+C0069,Julia,Garcia,julia.garcia@example.com,Taguig,2025-03-27,Student
+C0070,Oscar,Del Rosario,oscar.delrosario@example.com,Quezon City,2026-04-04,Retail
+C0071,Ana,Torres,ana.torres@example.com,Manila,2026-03-12,SME
+C0072,Kevin,Aquino,kevin.aquino@example.com,Makati,2025-05-03,Professional
+C0073,Carla,Aquino,carla.aquino@example.com,Caloocan,2025-12-02,Retail
+C0074,Julia,Bautista,julia.bautista@example.com,Taguig,2025-07-15,Student
+C0075,Lara,Pascual,lara.pascual@example.com,Pasig,2025-07-22,Student
+C0076,Oscar,Flores,oscar.flores@example.com,Pasay,2025-02-26,SME
+C0077,Hannah,Santos,hannah.santos@example.com,Pasig,2025-05-12,Student
+C0078,Oscar,Fernandez,oscar.fernandez@example.com,Makati,2026-05-02,SME
+C0079,Tomas,Pascual,tomas.pascual@example.com,,2026-03-30,SME
+C0080,Ben,Fernandez,ben.fernandez@example.com,Manila,2026-05-07,Professional
+C0081,Tomas,Castillo,tomas.castillo@example.com,Marikina,2025-04-18,Student
+C0082,Ramon,Ramos,ramon.ramos@example.com,Mandaluyong,2025-03-29,SME
+C0083,Sofia,Ramos,sofia.ramos@example.com,Parañaque,2025-10-11,SME
+C0084,Queenie,Fernandez,queenie.fernandez@example.com,Mandaluyong,2025-10-23,Professional
+C0085,Queenie,Pascual,queenie.pascual@example.com,Marikina,2026-04-08,Professional
+C0086,Ramon,Tan,ramon.tan@example.com,Pasay,2026-01-24,SME
+C0087,Hannah,Castillo,hannah.castillo@example.com,Parañaque,2025-06-03,SME
+C0088,Oscar,Navarro,oscar.navarro@example.com,Makati,2025-05-26,SME
+C0089,Diego,Cruz,diego.cruz@example.com,Pasay,2026-02-04,Professional
+C0090,Paolo,Aquino,paolo.aquino@example.com,Marikina,2025-07-30,SME
+C0091,Grace,Del Rosario,grace.delrosario@example.com,Quezon City,2025-07-12,Professional
+C0092,Nina,Mendoza,nina.mendoza@example.com,Marikina,2025-09-20,SME
+C0093,Ana,Pascual,ana.pascual@example.com,Caloocan,2025-09-21,Student
+C0094,Ella,Castillo,ella.castillo@example.com,Quezon City,2025-05-31,Retail
+C0095,Nina,Navarro,nina.navarro@example.com,Quezon City,2025-08-17,Retail
+C0096,Tomas,Navarro,tomas.navarro@example.com,Makati,2025-05-22,Professional
+C0097,Ella,Diaz,ella.diaz@example.com,Pasig,2026-03-18,Student
+C0098,Carla,Mercado,carla.mercado@example.com,Marikina,2026-03-07,Professional
+C0099,Ivan,Cruz,ivan.cruz@example.com,Manila,2025-02-08,Retail
+C0100,Paolo,Aquino,paolo.aquino@example.com,Pasay,2025-06-21,Retail
+C0101,Ana,Flores,ana.flores@example.com,Manila,2025-04-23,SME
+C0102,Hannah,Bautista,hannah.bautista@example.com,Mandaluyong,2025-05-25,Retail
+C0103,Ivan,Garcia,ivan.garcia@example.com,Marikina,2025-08-11,Retail
+C0104,Lara,Flores,lara.flores@example.com,Pasig,2025-03-31,Retail
+C0105,Julia,Navarro,julia.navarro@example.com,Pasay,2025-07-10,SME
+C0106,Carla,Navarro,carla.navarro@example.com,Pasig,2025-07-26,Professional
+C0107,Kevin,Navarro,kevin.navarro@example.com,Quezon City,2025-09-28,Professional
+C0108,Julia,Navarro,julia.navarro@example.com,Quezon City,2025-09-09,Student
+C0109,Diego,Mendoza,diego.mendoza@example.com,Marikina,2026-02-01,Professional
+C0110,Nina,Cruz,nina.cruz@example.com,Caloocan,2026-04-11,SME
+C0111,Ramon,Castillo,ramon.castillo@example.com,Makati,2025-03-10,Professional
+C0112,Diego,Lim,diego.lim@example.com,Caloocan,2025-03-27,Student
+C0113,Ella,Garcia,ella.garcia@example.com,Caloocan,2025-08-16,Retail
+C0114,Julia,Cruz,julia.cruz@example.com,Manila,2025-06-15,SME
+C0115,Ben,Garcia,ben.garcia@example.com,Pasay,2025-08-24,SME
+C0116,Nina,Navarro,nina.navarro@example.com,Manila,2025-10-24,Professional
+C0117,Ana,Reyes,ana.reyes@example.com,Marikina,2025-10-31,Professional
+C0118,Kevin,Bautista,kevin.bautista@example.com,Quezon City,2025-10-15,Student
+C0119,Ramon,Torres,ramon.torres@example.com,Quezon City,2025-11-16,Retail
+C0120,Oscar,Diaz,oscar.diaz@example.com,Quezon City,2025-12-11,Professional
+C0121,Francis,Del Rosario,francis.delrosario@example.com,Manila,2025-10-18,SME
+C0122,Tomas,Navarro,tomas.navarro@example.com,Marikina,2025-05-29,Professional
+C0123,Ella,Torres,ella.torres@example.com,Marikina,2026-03-01,Retail
+C0124,Kevin,Lim,kevin.lim@example.com,Caloocan,2025-04-23,Student
+C0125,Marco,Aquino,marco.aquino@example.com,Parañaque,2025-09-01,SME
+C0126,Ella,Aquino,ella.aquino@example.com,Marikina,2026-02-21,SME
+C0127,Marco,Castillo,marco.castillo@example.com,Taguig,2025-04-27,Professional
+C0128,Marco,Reyes,marco.reyes@example.com,Parañaque,2025-08-24,SME
+C0129,Lara,Reyes,lara.reyes@example.com,Makati,2025-07-24,Retail
+C0130,Paolo,Torres,paolo.torres@example.com,Pasig,2025-07-21,SME
+C0131,Queenie,Tan,queenie.tan@example.com,Mandaluyong,2025-03-08,Professional
+C0132,Diego,Ramos,,Makati,2025-02-26,Student
+C0133,Sofia,Cruz,sofia.cruz@example.com,Parañaque,2025-12-31,SME
+C0134,Sofia,Lim,sofia.lim@example.com,Mandaluyong,2025-12-09,Retail
+C0135,Tomas,Torres,tomas.torres@example.com,Manila,2025-03-14,Retail
+C0136,Oscar,Villanueva,oscar.villanueva@example.com,Marikina,2025-04-01,SME
+C0137,Nina,Navarro,nina.navarro@example.com,Marikina,2025-11-13,SME
+C0138,Francis,Castillo,francis.castillo@example.com,Manila,2025-08-31,Retail
+C0139,Paolo,Navarro,paolo.navarro@example.com,Taguig,2025-02-14,Student
+C0140,Carla,Mercado,carla.mercado@example.com,Caloocan,2025-12-29,SME
+C0141,Ivan,Flores,ivan.flores@example.com,Manila,2026-01-08,Student
+C0142,Ana,Villanueva,ana.villanueva@example.com,Pasig,2026-01-21,Professional
+C0143,Ana,Cruz,ana.cruz@example.com,Mandaluyong,2026-02-06,Retail
+C0144,Tomas,Diaz,tomas.diaz@example.com,Marikina,2025-09-16,SME
+C0145,Julia,Tan,julia.tan@example.com,Manila,2025-02-02,Professional
+C0146,Grace,Bautista,grace.bautista@example.com,Pasig,2025-06-23,Retail
+C0147,Ramon,Mendoza,ramon.mendoza@example.com,Manila,2025-09-28,Professional
+C0148,Ben,Del Rosario,ben.delrosario@example.com,Marikina,2025-07-27,Retail
+C0149,Oscar,Reyes,oscar.reyes@example.com,Marikina,2025-06-23,Student
+C0150,Ivan,Lim,ivan.lim@example.com,Makati,2025-02-11,Retail
+C0151,Carla,Villanueva,carla.villanueva@example.com,Mandaluyong,2025-07-19,Retail
+C0152,Julia,Navarro,julia.navarro@example.com,Pasig,2026-01-23,SME
+C0153,Kevin,Bautista,kevin.bautista@example.com,Makati,2025-09-01,Retail
+C0154,Ben,Flores,ben.flores@example.com,Mandaluyong,2025-09-22,SME
+C0155,Tomas,Mendoza,tomas.mendoza@example.com,Quezon City,2025-12-23,Professional
+C0156,Nina,Mercado,nina.mercado@example.com,Taguig,2025-10-12,SME
+C0157,Grace,Santos,grace.santos@example.com,Quezon City,2025-05-24,Retail
+C0158,Marco,Cruz,marco.cruz@example.com,Parañaque,2025-03-17,Professional
+C0159,Julia,Bautista,julia.bautista@example.com,Quezon City,2025-10-25,Professional
+C0160,Ivan,Fernandez,ivan.fernandez@example.com,Quezon City,2025-01-15,Professional
+C0161,Nina,Lim,nina.lim@example.com,Mandaluyong,2026-04-29,SME
+C0162,Carla,Flores,carla.flores@example.com,Manila,2026-05-14,Retail
+C0163,Hannah,Del Rosario,hannah.delrosario@example.com,Parañaque,2025-02-09,Professional
+C0164,Oscar,Pascual,oscar.pascual@example.com,Marikina,2025-12-06,Professional
+C0165,Kevin,Flores,kevin.flores@example.com,Parañaque,2025-05-22,Student
+C0166,Hannah,Mendoza,hannah.mendoza@example.com,Taguig,2025-06-26,Student
+C0167,Kevin,Flores,kevin.flores@example.com,Taguig,2026-05-06,Student
+C0168,Paolo,Mendoza,paolo.mendoza@example.com,Parañaque,2025-03-27,Retail
+C0169,Hannah,Aquino,hannah.aquino@example.com,Pasay,2026-01-10,SME
+C0170,Grace,Reyes,grace.reyes@example.com,Taguig,2026-05-16,SME
+C0171,Paolo,Mercado,paolo.mercado@example.com,Pasig,2025-11-26,Student
+C0172,Ivan,Mercado,ivan.mercado@example.com,Makati,2025-10-18,Student
+C0173,Diego,Tan,diego.tan@example.com,Pasay,2025-10-29,Retail
+C0174,Ben,Navarro,ben.navarro@example.com,Quezon City,2026-03-20,Retail
+C0175,Queenie,Garcia,queenie.garcia@example.com,Makati,2026-03-12,SME
+C0176,Paolo,Aquino,paolo.aquino@example.com,Parañaque,2025-08-24,Student
+C0177,Diego,Villanueva,diego.villanueva@example.com,Marikina,2026-01-12,Student
+C0178,Julia,Villanueva,julia.villanueva@example.com,Mandaluyong,2025-10-23,Retail
+C0179,Francis,Ramos,francis.ramos@example.com,Parañaque,2025-04-27,Professional
+C0180,Ella,Castillo,ella.castillo@example.com,Manila,2025-04-05,SME
+C0181,Ramon,Tan,ramon.tan@example.com,Pasay,2025-12-09,Retail
+C0182,Ana,Diaz,ana.diaz@example.com,Makati,2026-04-11,Retail
+C0183,Lara,Reyes,lara.reyes@example.com,Parañaque,2025-03-05,Professional
+C0184,Oscar,Del Rosario,oscar.delrosario@example.com,Makati,2025-07-11,Retail
+C0185,Tomas,Flores,tomas.flores@example.com,Pasig,2025-07-14,Retail
+C0186,Hannah,Reyes,hannah.reyes@example.com,Quezon City,2026-04-17,SME
+C0187,Ivan,Aquino,ivan.aquino@example.com,Taguig,2026-01-25,Professional
+C0188,Carla,Bautista,carla.bautista@example.com,Quezon City,2026-01-08,Retail
+C0189,Hannah,Santos,hannah.santos@example.com,Marikina,2025-02-08,Student
+C0190,Lara,Lim,lara.lim@example.com,Marikina,2025-11-12,SME
+C0191,Grace,Santos,grace.santos@example.com,Manila,2026-03-10,Retail
+C0192,Kevin,Cruz,kevin.cruz@example.com,Mandaluyong,2026-05-02,Professional
+C0193,Grace,Del Rosario,grace.delrosario@example.com,Manila,2026-01-22,Student
+C0194,Ana,Lim,ana.lim@example.com,Mandaluyong,2025-02-11,SME
+C0195,Hannah,Fernandez,hannah.fernandez@example.com,Pasay,2025-09-02,Professional
+C0196,Carla,Diaz,carla.diaz@example.com,Caloocan,2025-11-15,Professional
+C0197,Queenie,Lim,queenie.lim@example.com,Parañaque,2025-05-17,Retail
+C0198,Grace,Tan,grace.tan@example.com,Mandaluyong,2025-07-01,Student
+C0199,Tomas,Garcia,tomas.garcia@example.com,Makati,2026-03-24,SME
+C0200,Oscar,Santos,oscar.santos@example.com,Makati,2025-01-27,Student
+C0201,Oscar,Bautista,oscar.bautista@example.com,Manila,2026-04-07,Professional
+C0202,Oscar,Villanueva,oscar.villanueva@example.com,Quezon City,2026-01-27,SME
+C0203,Francis,Santos,francis.santos@example.com,Mandaluyong,2025-08-31,SME
+C0204,Marco,Ramos,marco.ramos@example.com,,2025-04-16,SME
+C0205,Marco,Flores,marco.flores@example.com,Manila,2025-10-31,SME
+C0206,Grace,Santos,grace.santos@example.com,Mandaluyong,2025-06-17,Retail
+C0207,Tomas,Ramos,tomas.ramos@example.com,Mandaluyong,2025-03-20,SME
+C0208,Nina,Pascual,nina.pascual@example.com,Pasig,2025-05-07,Professional
+C0209,Ben,Flores,ben.flores@example.com,Manila,2025-02-06,Student
+C0210,Marco,Castillo,marco.castillo@example.com,Caloocan,2025-01-04,Professional
+C0211,Diego,Cruz,diego.cruz@example.com,Manila,2026-04-21,Retail
+C0212,Nina,Del Rosario,nina.delrosario@example.com,Parañaque,2025-04-18,SME
+C0213,Julia,Flores,julia.flores@example.com,Parañaque,2026-02-10,Student
+C0214,Ben,Villanueva,ben.villanueva@example.com,Mandaluyong,2026-03-22,Student
+C0215,Nina,Fernandez,nina.fernandez@example.com,Quezon City,2025-10-16,SME
+C0216,Paolo,Santos,paolo.santos@example.com,Pasig,2025-01-11,Retail
+C0217,Grace,Diaz,grace.diaz@example.com,Taguig,2026-02-08,Student
+C0218,Oscar,Diaz,oscar.diaz@example.com,Pasay,2026-04-13,Retail
+C0219,Hannah,Pascual,hannah.pascual@example.com,Pasay,2025-03-29,Student
+C0220,Tomas,Mendoza,tomas.mendoza@example.com,Taguig,2025-12-03,SME
+C0036,Kevin,Fernandez,kevin.fernandez@example.com,Pasay,2025-03-01,Student
+C0090,Hannah,Reyes,hannah.reyes@example.com,Caloocan,2026-04-22,Retail
+C0145,Julia,Tan,julia.tan@example.com,Manila,2025-02-02,Professional
+C0224,Hannah,Cruz,hannah.cruz@example.com,Manila,2025-08-21,SME
+C0225,Ben,Mendoza,ben.mendoza@example.com,Marikina,2026-01-08,SME
+C0226,Kevin,Villanueva,kevin.villanueva@example.com,Taguig,2026-01-24,SME
+C0227,Grace,Cruz,grace.cruz@example.com,Makati,2025-12-05,Retail
+C0228,Oscar,Pascual,oscar.pascual@example.com,Taguig,2025-08-24,Professional
+C0229,Lara,Santos,lara.santos@example.com,Marikina,2025-02-03,Retail
+C0230,Lara,Tan,lara.tan@example.com,Manila,2026-04-27,SME
+C0231,Oscar,Reyes,oscar.reyes@example.com,Makati,2026-04-29,Retail
+C0232,Marco,Ramos,marco.ramos@example.com,Manila,2025-05-14,Student
+C0233,Ramon,Mercado,ramon.mercado@example.com,Taguig,2026-02-13,Professional
+C0234,Ella,Diaz,ella.diaz@example.com,Pasig,2026-04-30,Retail
+C0235,Oscar,Mercado,oscar.mercado@example.com,Pasay,2025-11-11,Professional
+C0236,Ramon,Del Rosario,ramon.delrosario@example.com,Manila,2025-07-27,SME
+C0237,Francis,Pascual,francis.pascual@example.com,Mandaluyong,2026-04-21,Retail
+C0238,Queenie,Cruz,queenie.cruz@example.com,Mandaluyong,2025-05-06,Student
+C0239,Oscar,Diaz,oscar.diaz@example.com,Marikina,2025-11-17,Professional
+C0240,Nina,Flores,nina.flores@example.com,Mandaluyong,2025-03-14,SME
+C0241,Nina,Reyes,nina.reyes@example.com,Pasig,2026-03-03,Student
+C0242,Ramon,Flores,ramon.flores@example.com,Taguig,2025-06-21,Student
+C0243,Ben,Reyes,ben.reyes@example.com,Pasig,2025-03-13,Retail
+C0244,Ivan,Fernandez,ivan.fernandez@example.com,Mandaluyong,2025-08-16,Student
+C0245,Marco,Pascual,marco.pascual@example.com,Pasay,2025-12-09,SME
+C0246,Nina,Lim,nina.lim@example.com,Mandaluyong,2025-12-01,Retail
+C0247,Paolo,Lim,paolo.lim@example.com,Taguig,2025-01-25,Retail
+C0248,Ben,Torres,ben.torres@example.com,Makati,2025-12-24,SME
+C0249,Hannah,Navarro,hannah.navarro@example.com,Manila,2025-08-03,SME
+C0250,Francis,Bautista,francis.bautista@example.com,Mandaluyong,2025-08-18,SME

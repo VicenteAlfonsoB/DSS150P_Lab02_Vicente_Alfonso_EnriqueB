@@ -1,0 +1,12 @@
+source_name: "TODO"
+source_type: "TODO"
+location_or_endpoint: "TODO"
+owner: "TODO"
+description: "TODO"
+record_count: "TODO"
+schema: []
+primary_or_candidate_key: "TODO"
+update_pattern: "TODO"
+known_quality_issues: []
+acquisition_method: "TODO"
+validation_checks: []
