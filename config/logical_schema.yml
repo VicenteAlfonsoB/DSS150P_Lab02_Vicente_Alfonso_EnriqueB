@@ -1,0 +1,175 @@
+# Logical schema - DSS150P Laboratory Activity #2 2.2
+
+schemas:
+
+  customers:
+    source: data/customers.csv
+    grain: "One row per customer registration as delivered in the snapshot."
+    key_note: >
+      customer_id is a candidate key by intent but is NOT unique in the delivered
+      data (247 distinct across 250 rows). It is declared as the logical key here
+      because that is the agreed contract; the current violation is a source defect
+      to be raised, not a reason to redefine the key.
+    fields:
+
+      - name: customer_id
+        source_representation: "CSV text field"
+        logical_type: string
+        nullable: false
+        key_role: candidate_key
+        definition: >
+          Stable identifier assigned to a customer by the source system. Format
+          observed as a C prefix followed by four digits. Intended to be unique
+          and is not, in this snapshot.
+
+      - name: first_name
+        source_representation: "CSV text field"
+        logical_type: string
+        nullable: false
+        key_role: attribute
+        definition: "Given name of the customer as recorded at registration."
+
+      - name: last_name
+        source_representation: "CSV text field"
+        logical_type: string
+        nullable: false
+        key_role: attribute
+        definition: "Family name of the customer as recorded at registration."
+
+      - name: email
+        source_representation: "CSV text field"
+        logical_type: email_string
+        nullable: true
+        key_role: attribute
+        definition: >
+          Contact email address. Missing on 3 of 250 rows. Not unique (184 distinct
+          across 247 non-missing), so it cannot substitute for customer_id.
+
+      - name: city
+        source_representation: "CSV text field"
+        logical_type: string
+        nullable: true
+        key_role: attribute
+        definition: >
+          City of residence, drawn from a closed set of 10 observed values.
+          Missing on 2 of 250 rows.
+
+      - name: signup_date
+        source_representation: "CSV text field, ISO format YYYY-MM-DD"
+        logical_type: date
+        nullable: false
+        key_role: attribute
+        definition: >
+          Calendar date on which the customer registered. Logically a date even
+          though CSV can only carry it as text. Observed values span 2025 and 2026.
+
+      - name: customer_segment
+        source_representation: "CSV text field"
+        logical_type: enum_string
+        nullable: false
+        key_role: attribute
+        allowed_values: [Professional, Retail, SME, Student]
+        definition: >
+          Commercial classification assigned by the business. Exactly 4 distinct
+          values observed; treated as a closed set subject to the change policy.
+
+  api_events:
+    source: "GET http://127.0.0.1:8000/api/events (paginated)"
+    grain: >
+      One record per event STATE, not per event. The feed restates events, so a
+      single event_id may arrive more than once with different values. After
+      deduplication the grain becomes one row per event_id, holding its latest
+      known state.
+    key_note: >
+      event_id is the business key but is not unique as delivered (120 distinct
+      across 122 items). Uniqueness is established by the pipeline, by keeping the
+      record with the greatest updated_at per event_id.
+    fields:
+
+      - name: event_id
+        source_representation: "JSON string"
+        logical_type: string
+        nullable: false
+        key_role: business_key
+        definition: >
+          Identifier of the interaction event. Unique per event after deduplication;
+          repeated in the raw feed when the source restates an event.
+
+      - name: customer_id
+        source_representation: "JSON string"
+        logical_type: string
+        nullable: false
+        key_role: foreign_key
+        definition: >
+          Reference to the customer who generated the event. Joins to
+          customers.customer_id, with the caveat that the target key is not unique.
+
+      - name: event_type
+        source_representation: "JSON string"
+        logical_type: enum_string
+        nullable: false
+        key_role: attribute
+        allowed_values: [add_to_cart, checkout, page_view, payment, support]
+        definition: "Category of interaction the event records."
+
+      - name: amount
+        source_representation: "JSON number"
+        logical_type: decimal
+        nullable: false
+        key_role: measure
+        definition: >
+          Monetary value associated with the event. This is the field that changes
+          between restatements of the same event_id, so it is the reason the
+          deduplication rule must be deterministic rather than arbitrary.
+
+      - name: updated_at
+        source_representation: "JSON string, ISO-8601, NO timezone offset"
+        logical_type: timestamp
+        nullable: false
+        key_role: change_marker
+        definition: >
+          Time at which the source last modified this event. Logically a timestamp
+          despite arriving as text. Serves three purposes: ordering restatements of
+          the same event_id, driving the updated_after request filter, and supplying
+          the watermark value. Timezone is undeclared, which is a documented risk.
+
+      - name: metadata.channel
+        source_representation: "JSON string nested inside the metadata object"
+        logical_type: enum_string
+        nullable: false
+        key_role: attribute
+        allowed_values: [mobile, partner, web]
+        definition: "Channel through which the interaction occurred."
+
+      - name: metadata.campaign
+        source_representation: "JSON string nested inside the metadata object"
+        logical_type: enum_string
+        nullable: false
+        key_role: attribute
+        allowed_values: [launch, none, retarget]
+        definition: >
+          Marketing campaign attributed to the event. The literal string "none" is
+          used rather than null, so absence of a campaign is encoded as a value.
+
+    pipeline_added_fields:
+      note: >
+        These are not source fields. They are added at ingestion time and exist to
+        make the raw record traceable. They are listed here so the logical schema
+        describes what actually lands in the raw area.
+
+      - name: _ingested_at
+        source_representation: "not present in the source"
+        logical_type: timestamp_utc
+        nullable: false
+        key_role: lineage
+        definition: >
+          UTC instant at which this record was written to the raw area. Distinct
+          from updated_at: updated_at is when the SOURCE changed the event,
+          _ingested_at is when THIS pipeline acquired it.
+
+      - name: _source
+        source_representation: "not present in the source"
+        logical_type: string
+        nullable: false
+        key_role: lineage
+        definition: "Identifier of the endpoint the record was acquired from."
