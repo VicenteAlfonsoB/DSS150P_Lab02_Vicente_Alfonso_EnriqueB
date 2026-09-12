@@ -1,0 +1,182 @@
+
+==============================================================================
+CSV PROFILE: customers.csv
+==============================================================================
+File size : 18,183 bytes (17.8 KB)
+Rows      : 250
+Columns   : 7
+
+Column detail
+------------------------------------------------------------------------------
+column            dtype       logical type                     missing  miss%   uniq
+------------------------------------------------------------------------------
+customer_id       str         string                                 0   0.0%    247
+first_name        str         string                                 0   0.0%     20
+last_name         str         string                                 0   0.0%     20
+email             str         email (string)                         3   1.2%    184
+city              str         string                                 2   0.8%     10
+signup_date       str         date/timestamp (stored as text)        0   0.0%    189
+customer_segment  str         string                                 0   0.0%      4
+
+Placeholder-style values NOT counted as missing by pandas
+------------------------------------------------------------------------------
+  none found
+
+Exact duplicate rows (every column identical): 2
+  Rows involved (showing up to 10):
+customer_id first_name last_name                       email   city signup_date customer_segment
+      C0036      Kevin Fernandez kevin.fernandez@example.com  Pasay  2025-03-01          Student
+      C0036      Kevin Fernandez kevin.fernandez@example.com  Pasay  2025-03-01          Student
+      C0145      Julia       Tan       julia.tan@example.com Manila  2025-02-02     Professional
+      C0145      Julia       Tan       julia.tan@example.com Manila  2025-02-02     Professional
+
+Candidate key check: customer_id
+  distinct values : 247
+  missing values  : 0
+  unique overall  : False
+  repeated ids    : 3
+  ids repeating with DIFFERENT values: 1 ['C0090']
+customer_id first_name last_name                    email     city signup_date customer_segment
+      C0090      Paolo    Aquino paolo.aquino@example.com Marikina  2025-07-30              SME
+      C0090     Hannah     Reyes hannah.reyes@example.com Caloocan  2026-04-22           Retail
+
+First 5 rows
+------------------------------------------------------------------------------
+customer_id first_name  last_name                        email        city signup_date customer_segment
+      C0001      Kevin   Bautista   kevin.bautista@example.com       Pasig  2025-04-27     Professional
+      C0002      Paolo    Mendoza    paolo.mendoza@example.com      Makati  2025-08-04           Retail
+      C0003      Julia      Ramos      julia.ramos@example.com      Taguig  2026-01-15              SME
+      C0004      Marco      Reyes      marco.reyes@example.com      Makati  2026-02-21          Student
+      C0005      Paolo Villanueva paolo.villanueva@example.com Quezon City  2025-12-15     Professional
+
+==============================================================================
+JSON PROFILE: orders.json
+==============================================================================
+File size : 77,938 bytes (76.1 KB)
+Root type : list
+Root is a list of records: True
+Records   : 250
+
+Top-level keys
+------------------------------------------------------------------------------
+key                 present  missing   null   python types
+------------------------------------------------------------------------------
+order_id                250        0      0   str
+customer_id             250        0      0   str
+order_timestamp         250        0      0   str
+status                  250        0      0   str
+item_count              250        0      0   int
+subtotal                250        0      0   float
+shipping_fee            250        0      0   int
+total_amount            250        0      0   float
+shipping                250        0      0   dict
+
+Nested fields: ['shipping']
+  shipping -> sub-keys: {'region': 250, 'method': 250}
+
+Numeric fields   : ['item_count', 'subtotal', 'shipping_fee', 'total_amount']
+Timestamp fields : ['order_timestamp']
+
+Flattened shape  : (250, 10)
+Flattened columns: ['order_id', 'customer_id', 'order_timestamp', 'status', 'item_count', 'subtotal', 'shipping_fee', 'total_amount', 'shipping.region', 'shipping.method']
+
+Nulls after flattening
+order_id           0
+customer_id        0
+order_timestamp    0
+status             0
+item_count         0
+subtotal           0
+shipping_fee       0
+total_amount       0
+shipping.region    0
+shipping.method    0
+
+Sample record
+------------------------------------------------------------------------------
+{
+  "order_id": "O00001",
+  "customer_id": "C0230",
+  "order_timestamp": "2026-06-27T03:27:00",
+  "status": "Packed",
+  "item_count": 7,
+  "subtotal": 5390.6,
+  "shipping_fee": 49,
+  "total_amount": 5439.6,
+  "shipping": {
+    "region": "Region VII",
+    "method": "Standard"
+  }
+}
+
+==============================================================================
+PARQUET PROFILE: products.parquet
+==============================================================================
+File size : 14,652 bytes (14.3 KB)
+Rows      : 200
+Columns   : 7
+
+Column detail
+------------------------------------------------------------------------------
+column                  dtype               missing    uniq
+------------------------------------------------------------------------------
+product_id              str                       0     200
+product_name            str                       0     200
+category                str                       0       6
+brand                   str                       0       6
+unit_price              float64                   0     200
+stock_quantity          int32                     0     135
+weight_kg               float64                   0     197
+
+Numeric summary
+------------------------------------------------------------------------------
+         unit_price  stock_quantity   weight_kg
+count    200.000000       200.00000  200.000000
+mean   41980.427500       125.51500    4.102105
+std    24015.224644        72.70025    2.561470
+min      392.850000         0.00000    0.114000
+25%    21278.805000        64.50000    1.781750
+50%    41996.980000       129.50000    4.258000
+75%    61617.927500       185.00000    6.508500
+max    84796.840000       250.00000    7.989000
+
+Parquet physical metadata
+------------------------------------------------------------------------------
+  row groups  : 1
+  created by  : DSS150P classroom sample generator
+  compression : UNCOMPRESSED
+
+Arrow schema (types stored INSIDE the file):
+product_id: string not null
+product_name: string not null
+category: string not null
+brand: string not null
+unit_price: double not null
+stock_quantity: int32 not null
+weight_kg: double not null
+
+Same data, three formats - file size
+------------------------------------------------------------------------------
+  products.parquet                        14,652 bytes (   14.3 KB)
+  products_optional_compare.csv           11,560 bytes (   11.3 KB)
+  products_optional_compare.json          40,686 bytes (   39.7 KB)
+
+Type preservation: parquet vs the same data as CSV
+------------------------------------------------------------------------------
+column                  parquet           csv               
+product_id              str               str               
+product_name            str               str               
+category                str               str               
+brand                   str               str               
+unit_price              float64           float64           
+stock_quantity          int32             int64             
+weight_kg               float64           float64           
+
+First 5 rows
+------------------------------------------------------------------------------
+product_id        product_name category   brand  unit_price  stock_quantity  weight_kg
+     P0001 Pioneer Storage 001  Storage Pioneer    60431.61              61      0.215
+     P0002  Nimbus Monitor 002  Monitor  Nimbus    74094.63             239      4.407
+     P0003   Aster Storage 003  Storage   Aster    34830.50              53      6.358
+     P0004    Vertex Phone 004    Phone  Vertex    20008.31              27      6.199
+     P0005   Orion Storage 005  Storage   Orion    76614.51             109      5.168
