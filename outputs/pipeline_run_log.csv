@@ -1,0 +1,7 @@
+run_id,started_at,finished_at,status,source,records_read,records_written,duplicates_removed,watermark_before,watermark_after,error_message
+e896764ce455,2026-09-12T13:16:51.494252+00:00,2026-09-12T13:16:51.496083+00:00,SUCCESS,files,3,3,0,,,
+e896764ce455,2026-09-12T13:16:51.496403+00:00,2026-09-12T13:16:51.500086+00:00,FAILED,api,0,0,0,,,"RuntimeError: API request failed on page 1 at http://127.0.0.1:8000/api/events - ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/events?page=1&per_page=25 (Caused by NewConnectionError(""HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"")). Is src/local_api_server.py running?"
+338f102012bf,2026-09-12T13:21:04.619746+00:00,2026-09-12T13:21:04.620610+00:00,SUCCESS,files,3,0,3,,,
+338f102012bf,2026-09-12T13:21:04.621285+00:00,2026-09-12T13:21:04.674014+00:00,SUCCESS,api,122,120,2,,2026-08-21T10:00:00,
+f157ea7168f7,2026-09-12T13:25:33.292258+00:00,2026-09-12T13:25:33.293211+00:00,SUCCESS,files,3,0,3,,,
+f157ea7168f7,2026-09-12T13:25:33.293701+00:00,2026-09-12T13:25:33.299849+00:00,SUCCESS,api,0,120,0,2026-08-21T10:00:00,2026-08-21T10:00:00,
